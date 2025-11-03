@@ -1,0 +1,27 @@
+
+<!-- Why is this file named index.html? Just like README.md is the main file in a GitHub project,
+index.html is the main entry point for websites. so It is bcs when you open a folder as a website the browser automatically looks for a file named index.html inside that folder. If it finds one it shows that page, basically a default homepage -->
+
+<!--If you name it index.html, you can just open:
+http://localhost:8000/
+instead of:
+http://localhost:8000/zinebs_first_page.html
+That’s simpler — and it matches how real websites are structured. -->
+
+<!DOCTYPE html>  <!--tells the browser this is an HTML5 document-->
+<html lang="en"> <!--is the root element, wraps everything on the page. attribute declares that the page language is English-->
+    <head>       <!--holds meta data/information about the page (not visible to users)-->
+        <meta charset="UTF-8">  <!--Defines the character encoding-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   <!-- Makes the webpage responsive on mobile devices. It sets the visible area (viewport) to the device’s width and ensures proper scaling. -->
+        <title>Zineb's Webpage</title> <!--The text inside, appears on the browser tab and in search engine results.-->
+    </head> <!--Closes the head section.-->
+    <body>      <!--is what users actually see, — text, images, buttons, etc. -->
+        <div>   <!-- a container (short for “division”) — used to group content for styling or layout.-->
+            <h1>Welcome to Zineb's Webpage</h1>  <!-- is a heading, usually the main title of the page-->
+        </div>
+
+        <div>
+            <img src="logo.gif" alt="Website Logo">     <!-- tells the browser where to find the image file, provides alternative text — shown if the image can’t load, and used by screen readers for accessibility-->
+        </div>
+    </body>
+</html>
