@@ -1,0 +1,81 @@
+<!--HTML BASIC DOCUMENT STRUCTURE AND COMMON TAGS -->
+
+<!--If you name it index.html, you can just open:
+http://localhost:8000/
+instead of:
+http://localhost:8000/zinebs_first_page.html
+That’s simpler — and it matches how real websites are structured. -->
+
+
+<!DOCTYPE html>
+<html> <!-- HTML is always the first element; everything else goes inside it -->
+<head> <!-- Contains page metadata, CSS links, and JavaScript code -->
+    <title>My Page Title</title> <!-- Title shown in the browser tab -->
+    <meta charset="UTF-8"> <!-- Character encoding, needed for special letters -->
+    <meta name="description" content="This is a beginner HTML page"> <!-- Page description for search engines -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page mobile-friendly -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS file -->
+    <script src="script.js"></script> <!-- Link to an external JavaScript file -->
+</head>
+<body> <!-- Contains all visible content on the webpage -->
+
+    <!-- Headings and text -->
+    <h1>Heading</h1>
+    <h2>Subheading</h2>
+    <p>Paragraph text goes here.</p>
+    <p><strong>Bold text</strong> and <em>italic text</em> are useful for emphasis.</p>
+
+    <!-- Links and images -->
+    <a href="#">This is a link</a>
+    <img src="image.jpg" alt="An image">
+
+    <!-- Lists -->
+    <ul> <!-- Unordered list (bulleted) -->
+        <li>Unordered list item</li>
+        <li>Another item</li>
+    </ul>
+    <ol> <!-- Ordered list (numbered) -->
+        <li>Ordered list item</li>
+        <li>Second item</li>
+    </ol>
+
+    <!-- Structure and layout -->
+    <div>A division (block element)</div> <!-- Groups content in blocks -->
+    <span>Inline text</span> <!-- Inline element, stays within a line of text -->
+
+    <section> <!-- Groups related content -->
+        <h3>Section heading</h3>
+        <p>Some content in a section.</p>
+    </section>
+
+    <article> <!-- Independent content, like a blog post -->
+        <h3>Article title</h3>
+        <p>Article text...</p>
+    </article>
+
+    <header>Header content (like logo or navigation)</header> <!-- Top section of the page -->
+    <footer>Footer content (like contact info or copyright)</footer> <!-- Bottom section of the page -->
+
+    <nav> <!-- Navigation menu -->
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Forms -->
+    <form action="#" method="post"> <!-- Form for user input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"> <!-- Text field -->
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea> <!-- Multi-line text area -->
+        <br>
+        <input type="submit" value="Send"> <!-- Submit button -->
+    </form>
+
+    <br> <!-- Line break -->
+    <h6>Small heading</h6> <!-- The smallest heading size -->
+
+</body>
+</html>
+
