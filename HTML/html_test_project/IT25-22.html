@@ -1,0 +1,433 @@
+<!--
+You will now seen how an HTML page is built in layers:
+
+1. <html> → the start and end of the entire document
+2. <head> → contains metadata (like the title, not visible content)
+3. <body> → contains everything that actually appears on the page
+4. <table> → used here to create the structure and layout
+5. <tr> and <td> → rows and cells inside tables
+6. <font> → controls the appearance of text (an old-fashioned method, but still readable)
+7. <img> → displays images
+8. <br> and <p> → create line breaks and spacing between text
+-->
+
+<html>
+<!-- Start of the entire HTML document. Everything should be inside <html> and </html> -->
+
+<head>
+ <!-- <head> contains information ABOUT the page (not what is directly visible) -->
+ <title>Tricell Labratories Inc.</title>
+ <!-- <title> is what appears in the browser tab -->
+</head>
+
+<body>
+<!-- <body> contains everything that is actually visible on the page -->
+
+<!-- HEADER START -->
+<!-- This is the top section (logo and some spacing) -->
+
+<table>
+ <!-- <table> creates a table. The table is used here for layout (pretty old method but works). -->
+ <tr>
+  <!-- <tr> means table row -->
+  <td height="30" colspan="2"><!-- An empty cell that creates space above the logo --></td>
+ </tr>
+ <tr>
+  <!-- New row -->
+  <td width="50"><!-- Empty cell on the left (for spacing) --></td>
+  <td width="293" height="90">
+    <!-- Here the logo is placed -->
+    <img src="images/logo.gif" alt="Tricell Labratories Inc." />
+    <!-- <img> displays an image. src specifies filename/path. alt is text shown if the image does not load. -->
+  </td>
+ </tr>
+ <tr>
+  <td height="30" colspan="2"><!-- Empty row under the logo --></td>
+ </tr>
+</table>
+
+<!-- HEADER END -->
+
+<!-- GREEN BAR START -->
+<!-- This is the green header bar that says “Personnel Registry” -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <!-- border = borders (0 means no visible border)
+      cellspacing = space between cells
+      cellpadding = space inside cells -->
+ <tr>
+  <td rowspan="4" width="110"><!-- Empty space on the left --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- A black line on the left side --></td>
+  <td width="756" height="1" bgcolor="#000000"><!-- Black line above the green bar --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black line on the right --></td>
+ <tr/>
+ <tr>
+  <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle">
+    <!-- The actual green bar -->
+	<font size="4" face="arial" color="#ffffff"><b>&nbsp;&nbsp;Personnel Registry</b></font>
+    <!-- <font> changes text appearance (size, font, color). <b> makes it bold. -->
+  </td>
+ </tr>
+ <tr>
+  <td width="756" height="1" bgcolor="#000000"><!-- Black line under the green bar --></td>
+ </tr>
+</table>
+<!-- GREEN BAR END -->
+
+<!-- OUTER TABLE START -->
+<!-- This starts the profile card with image, name, info, etc. -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="110"><!-- Empty cell (left margin) --></td>
+  <td width="1" bgcolor="#000000"><!-- Black line on the left --></td>
+  <td width="756" background="images/tablebg.gif">
+    <!-- Main box with background image -->
+
+	<!-- INNER TABLE START -->
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td colspan="5" height="30" width="756"><!-- Some space at the top --></td>
+	 </tr>
+	 <tr>
+	  <td width="30"><!-- Empty cell on the left --></td>
+	  <td width="166" valign="top">
+
+		<!-- INNER TABLE PHOTO START -->
+        <!-- This table holds the photo and some fields like Employee Code and Security Level -->
+		 <table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		   <td colspan="3" height="1" bgcolor="#0000000" width="166"><!-- Top line (but color code has extra zero = wrong, ignored) --></td>
+		  </tr>
+		  <tr>
+		   <td width="1" bgcolor="#000000"><!-- Black border left --></td>
+		   <td width="164" valign="top">
+             <img src="photos/IT25-22.jpg" width="164" alt="IT25-22" />
+             <!-- Character photo displayed here -->
+           </td>
+		   <td width="1" bgcolor="#000000"><!-- Black border right --></td>
+		  </tr>
+		  <tr>
+		   <td colspan="3" height="1" bgcolor="#0000000" width="166"><!-- Black line under the photo --></td>
+		  </tr>
+		  <tr>
+		   <td colspan="3" height="10" width="166"><!-- Some spacing --></td>
+		  </tr>
+		  <tr>
+		   <td colspan="3" height="50" width="166" bgcolor="#c5f7ff" valign="middle" align="center">
+			<!-- Field for "Employee Code" -->
+			<font size="2" face="arial" color="#686868"><b>EMPLOYE CODE:</b><br /></font>
+			<font size="4" face="arial" color="#000000"><b>IT25-22</b></font>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td colspan="3" height="10" width="166"><!-- Some spacing --></td>
+		  </tr>
+		  <tr>
+		   <td colspan="3" height="100" width="166" bgcolor="#70b8c3" valign="middle" align="center">
+			<!-- Security level -->
+			<font size="2" face="arial" color="#000000"><b>SECURITY ACESS LEVEL:</b><br /></font>
+			<font size="12" face="arial" color="#000000"><b>C</b></font>
+		   </td>
+		  </tr>
+		   <td colspan="3" height="30" width="166"><!-- Extra spacing --></td>
+		  <tr>
+		  </tr>
+
+		 </table>
+		<!-- INNER TABLE PHOTO END -->
+
+	  </td>
+	  <td width="135" valign="top">
+
+		<!-- INNER TABLE LABELS START -->
+        <!-- Lists field names on the left, e.g., NAME, SEX, HEIGHT, etc. -->
+		 <table border="0" cellspacing="0" cellpadding="0">
+		  <!-- Each row shows a label -->
+		  <tr>
+		   <td width="135" height="30" align="right" valign="middle">
+			<font size="2" face="arial" color="#686868"><b>NAME: </b>&nbsp;</font>
+		   </td>
+		  </tr>
+		  <!-- Then an empty row for spacing -->
+		  <tr><td width="135" height="10"></td></tr>
+		  <tr>
+		   <td width="135" height="30" align="right"><font size="2" face="arial" color="#686868"><b>DATE OF BRITH :</b>&nbsp;</font></td>
+		  </tr>
+		  <tr><td height="10"></td></tr>
+		  <tr><td height="30" align="right"><font size="2" face="arial" color="#686868"><b>SEX :</b>&nbsp;</font></td></tr>
+		  <tr><td height="10"></td></tr>
+		  <tr><td height="30" align="right"><font size="2" face="arial" color="#686868"><b>BLOOD TYPE :</b>&nbsp;</font></td></tr>
+		  <tr><td height="10"></td></tr>
+		  <tr><td height="30" align="right"><font size="2" face="arial" color="#686868"><b>HEIGHT :</b>&nbsp;</font></td></tr>
+		  <tr><td height="10"></td></tr>
+		  <tr><td height="30" align="right"><font size="2" face="arial" color="#686868"><b>WEIGHT :</b>&nbsp;</font></td></tr>
+		  <tr><td height="10"></td></tr>
+		  <tr><td height="30" align="right"><font size="2" face="arial" color="#686868"><b>DEPARTMENT :</b>&nbsp;</font></td></tr>
+		  <tr><td height="10"></td></tr>
+		  <tr><td height="30" align="right"><font size="2" face="arial" color="#686868"><b>RANK :</b>&nbsp;</font></td></tr>
+		  <tr><td height="10"></td></tr>
+		 </table>
+		<!-- INNER TABLE LABELS END -->
+
+	  </td>
+	  <td width="245" valign="top">
+
+			<!-- INNER TABLE VALUES START -->
+            <!-- The actual values for each field go here -->
+			<table border="0" cellspacing="0" cellpadding="0">
+			 <tr><td height="29"><font size="4" face="arial"><b>TECNA</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="4" face="arial"><b>18.8.2025</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="4" face="arial"><b>FEMALE</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="4" face="arial"><b>O-</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="4" face="arial"><b>12 cm</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="4" face="arial"><b>0.12 kg</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="2" face="arial"><b>MEDICAL DATA DEPARTMENT</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			 <tr><td height="29"><font size="4" face="arial"><b>JUNIOR DATA ANALYST</b></font></td></tr>
+			 <tr><td height="1" bgcolor="#000000"></td></tr>
+			 <tr><td height="10"></td></tr>
+			</table>
+			<!-- INNER TABLE VALUES END -->
+
+	  </td>
+	  <td width="182" valign="top"></td>
+	 </tr>
+	 <tr><td colspan="5" height="1" bgcolor="#000000"></td></tr>
+	</table>
+	<!-- INNER TABLE END -->
+ </td>
+  <td width="1" bgcolor="#000000"></td>
+ </tr>
+ <tr><td colspan="4" height="30"></td></tr>
+</table>
+<!-- OUTER TABLE END -->
+
+<!-- === Next section: Background === -->
+<!-- The green bar with the text “Background” -->
+
+<!-- GREEN BAR START -->
+<!-- This table creates the header bar "Background" -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td rowspan="4" width="110"><!-- Empty cell on the left for spacing --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black vertical line on the left --></td>
+  <td width="756" height="1" bgcolor="#000000"><!-- Black line above the header --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black line on the right --></td>
+ <tr/>
+ <tr>
+  <!-- Here the header itself is displayed -->
+  <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle">
+	<!-- bgcolor="#274f26" = dark green background -->
+	<font size="4" face="arial" color="#ffffff"><b>&nbsp;&nbsp;Background</b></font>
+	<!-- The text "Background" in white font -->
+  </td>
+ </tr>
+ <tr>
+  <td width="756" height="1" bgcolor="#000000"><!-- Black line under the header --></td>
+ </tr>
+</table>
+<!-- GREEN BAR END -->
+
+<!-- OUTER TABLE START -->
+<!-- Here comes the actual content for the "Background" section -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="110"><!-- Empty cell for left margin --></td>
+  <td width="1" bgcolor="#000000"><!-- Black line on the left --></td>
+  <td width="756" background="images/tablebg.gif">
+	<!-- The box where the text is placed. It has a background image (tablebg.gif) -->
+
+	<!-- INNER TABLE START -->
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td colspan="3" height="30" width="756"><!-- Space at the top --></td>
+	 </tr>
+	 <tr>
+	  <td width="30"><!-- Empty cell for left spacing --></td>
+	  <td width="690" valign="top">
+		<!-- Background text goes here -->
+	<font size="2" face="arial" color="#000000">
+Tecna is the Fairy of Technology and a founding member of the Winx Club. She hails from the planet Zenith, a highly advanced world driven by logic and technology. Tecna is known for her intelligence, analytical mind, and calm demeanor. She attends Alfea College for Fairies, where she hones her magical abilities alongside her friends.<br /><p></p>
+<!-- <br> means line break. <p></p> gives extra space between paragraphs -->
+<br /><p></p>
+	</font>
+	  </td>
+	  <td width="30"><!-- Empty cell on the right for margin --></td>
+	 <tr>
+	  <td colspan="3" height="30" width="756"><!-- Some space below the text --></td>
+	 </tr>
+	 <tr>
+	  <td colspan="3" height="1" bgcolor="#000000"><!-- Black line at the bottom --></td>
+	 </tr>
+	</table>
+	<!-- INNER TABLE END -->
+
+ </td>
+  <td width="1" bgcolor="#000000"><!-- Black line on the right --></td>
+ </tr>
+ <tr>
+  <td colspan="4" height="30"><!-- Empty row for spacing under the section --></td>
+ </tr>
+</table>
+<!-- OUTER TABLE END -->
+
+<!-- GREEN BAR START -->
+<!-- Same structure as before, now the header says "Strengths" -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td rowspan="4" width="110"><!-- Left margin --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black line on the left --></td>
+  <td width="756" height="1" bgcolor="#000000"><!-- Black line above the header --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black line on the right --></td>
+ <tr/>
+ <tr>
+  <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle">
+	<!-- The green header -->
+	<font size="4" face="arial" color="#ffffff"><b>&nbsp;&nbsp;Streghts</b></font>
+	<!-- NOTE: typo in original, should be “Strengths” -->
+  </td>
+ </tr>
+ <tr>
+  <td width="756" height="1" bgcolor="#000000"></td>
+ </tr>
+</table>
+<!-- GREEN BAR END -->
+
+<!-- OUTER TABLE START -->
+<!-- Text describing the strengths -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="110"><!-- Left margin --></td>
+  <td width="1" bgcolor="#000000"><!-- Black border on the left --></td>
+  <td width="756" background="images/tablebg.gif">
+	<!-- Box with text -->
+
+	<!-- INNER TABLE START -->
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td colspan="3" height="30"><!-- Space above text --></td>
+	 </tr>
+	 <tr>
+	  <td width="30"><!-- Left margin --></td>
+	  <td width="690" valign="top">
+	    <!-- Strengths text -->
+	    <font size="2" face="arial" color="#000000">
+Highly Intelligent: Tecna is a tech genius, often creating gadgets or solving complex problems using logic.
+<br /><p></p>
+Strategic Thinker: She is the group's problem-solver and often takes a rational approach to challenges.
+<br /><p></p>
+Technomagic Powers: She can control and manipulate digital and electronic systems.
+<br /><p></p>
+Loyal Friend: Though logical, she deeply cares for her friends and supports them when it matters most.
+<br /><p></p>
+Calm Under Pressure: Rarely panics and often provides stability in high-stress situations.
+        </font>
+      </td>
+	  <td width="30"><!-- Right margin --></td>
+	 <tr>
+	  <td colspan="3" height="30"><!-- Space below text --></td>
+	 </tr>
+	 <tr>
+	  <td colspan="3" height="1" bgcolor="#000000"><!-- Black line at the bottom --></td>
+	 </tr>
+	</table>
+	<!-- INNER TABLE END -->
+
+ </td>
+  <td width="1" bgcolor="#000000"><!-- Black border on the right --></td>
+ </tr>
+ <tr>
+  <td colspan="4" height="30"><!-- Space under the section --></td>
+ </tr>
+</table>
+<!-- OUTER TABLE END -->
+
+<!-- GREEN BAR START -->
+<!-- Header "Weaknesses" -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td rowspan="4" width="110"><!-- Left margin --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black border on the left --></td>
+  <td width="756" height="1" bgcolor="#000000"><!-- Black line above the header --></td>
+  <td rowspan="4" width="1" bgcolor="#000000"><!-- Black border on the right --></td>
+ <tr/>
+ <tr>
+  <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle">
+	<font size="4" face="arial" color="#ffffff"><b>&nbsp;&nbsp;Weaknesses</b></font>
+  </td>
+ </tr>
+ <tr>
+  <td width="756" height="1" bgcolor="#000000"><!-- Line under the header --></td>
+ </tr>
+</table>
+<!-- GREEN BAR END -->
+
+<!-- OUTER TABLE START -->
+<!-- Text about weaknesses -->
+
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr>
+  <td width="110"><!-- Left margin --></td>
+  <td width="1" bgcolor="#000000"><!-- Black line on the left --></td>
+  <td width="756" background="images/tablebg.gif">
+	<!-- Box with background -->
+
+	<!-- INNER TABLE START -->
+	<table border="0" cellspacing="0" cellpadding="0">
+	 <tr>
+	  <td colspan="3" height="30"><!-- Space above text --></td>
+	 </tr>
+	 <tr>
+	  <td width="30"><!-- Left margin --></td>
+	  <td width="690" valign="top">
+		<!-- The text itself -->
+		<font size="2" face="arial" color="#000000">
+Emotionally Reserved: She struggles to express her feelings, which can make her seem distant.
+Overly Logical: Sometimes relies too much on logic and has difficulty understanding emotional or irrational behavior.
+Social Challenges: Her tech-savvy and rational nature can isolate her in emotional conversations or group dynamics.
+Risk of Isolation: Because she values independence and efficiency, she may push others away unintentionally.
+		</font>
+	  </td>
+	  <td width="30"><!-- Right margin --></td>
+	 <tr>
+	  <td colspan="3" height="30"><!-- Space below text --></td>
+	 </tr>
+	 <tr>
+	  <td colspan="3" height="1" bgcolor="#000000"><!-- Black line at the bottom --></td>
+	 </tr>
+	</table>
+	<!-- INNER TABLE END -->
+
+ </td>
+  <td width="1" bgcolor="#000000"><!-- Black line on the right --></td>
+ </tr>
+ <tr>
+  <td colspan="4" height="30"><!-- Space at the bottom of the page --></td>
+ </tr>
+</table>
+<!-- OUTER TABLE END -->
+
+</body>
+<!-- End of the actual page content -->
+
+</html>
+<!-- End of the entire document -->
