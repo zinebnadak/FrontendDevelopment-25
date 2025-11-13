@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>This will only appear in browser tab...</title>
     <meta charset="UTF-8">
   </head>
+
   <body>
+    <header>    <!-- Semantic block-level element that represents the top section of a page or section. -->
+        <img src="logo.png" alt="Site Logo">
+        <nav>   <!-- Semantic block-level element for navigation links only -->
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
     <h1>Testing HTML...</h1>
     <p><strong>This is visible on the webpage.</strong></p>
     <a href="https://www.youtube.com/watch?v=jvNk5grizyU&list=RDjvNk5grizyU&start_radio=1">Visit Youtube</a><br><!-- use to make new line-->
@@ -20,6 +31,38 @@
         <li>Outer ordered list </li>
     </ol>
     <img src="https://pethelpful.com/.image/c_fill,g_faces:center/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg" alt="An image of a cute cat" width="600">
+
+    <div>hello</div>
+    <p>This is <span style="color: red; font-weight: bold;">important text</span> in the paragraph.</p>
+
+    <section> <!-- Typically, a section does not stand alone; it’s part of the larger page -->
+        <h3>Zinebs Underbara Hobbyer</h3>
+        <p>sova, laga mat, äta, simma, springa, tänka, be, äta lite mer och sova</p>
+    </section>
+
+    <article> <!-- If you copied this article to another page, it would still make sense on its own.-->
+        <h3>Zinebs Artikel</h3>
+        <p>Detta är exempel på hur zinebs artikel skulle kunna se ut</p>
+    </article>
+
+    <h2>Contact Zineb!</h2>
+    <h6>Send a sweet message to Zineb!</h6> <!-- The smallest heading size -->
+    <form action="#" method="post"> <!-- Form for user input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"> <!-- Text field -->
+        <br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea> <!-- Multi-line text area -->
+        <br>
+
+        <input type="submit" value="Send"> <!-- Submit button -->
+    </form>
+
+    <footer>
+        <p>© 2025 Zineb’s Website. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
 
