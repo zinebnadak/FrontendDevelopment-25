@@ -7,9 +7,9 @@ Goal:
 To build a multi-page internal company website using classic HTML techniques, based on the requirements from my teacher.
 
 Pages included:
-- index.html (welcome page)
+- ✅index.html (welcome page)
+- ✅ITXX-01.html, ITXX-02.html, etc. (employee profiles)
 - personnel_registry.html
-- ITXX-01.html, ITXX-02.html, etc. (employee profiles)
 - company_presentation.html
 - history.html
 - board_of_directors.html
