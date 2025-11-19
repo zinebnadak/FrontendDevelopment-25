@@ -4,17 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d11b9d81-aba1-41c6-b4da-034d3971094d" name="Changes" comment="13.11">
-      <change afterPath="$PROJECT_DIR$/HTML/#1_assignment_html/IT25-22_intern_website.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/intern_website.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d11b9d81-aba1-41c6-b4da-034d3971094d" name="Changes" comment="18.11">
+      <change afterPath="$PROJECT_DIR$/HTML/IT25-22_internal_website/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/internal_website/intern_website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/internal_website/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/html_test_project/IT25-22.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/#1_assignment_html/IT25-22_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/html_test_project/images /logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/#1_assignment_html/images /logo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/html_test_project/images /tablebg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/#1_assignment_html/images /tablebg.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/html_test_project/photos/IT25-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/#1_assignment_html/photos/IT25-22.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/#1_assignment_html/IT25-22_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/IT25-22_internal_website/IT25-22_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/#1_assignment_html/IT25-22_intern_website.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/HTML_README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/#1_assignment_html/images /logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/IT25-22_internal_website/images /logo.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/#1_assignment_html/images /tablebg.gif" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/IT25-22_internal_website/images /tablebg.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/#1_assignment_html/photos/IT25-22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/IT25-22_internal_website/photos/IT25-22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/internal_website/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/intern_website.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/IT25-22_internal_website/IT25-22_intern_website.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/internal_website/test_index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HTML/intern_website" />
+      <recent name="$PROJECT_DIR$/HTML/IT25-22_intern_website" />
       <recent name="$PROJECT_DIR$/HTML" />
       <recent name="$PROJECT_DIR$/HTML/html_test_project" />
       <recent name="$PROJECT_DIR$" />
@@ -74,7 +78,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HTML/index.html" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HTML/intern_website/index.html" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +201,14 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1763027036885</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="18.11">
+      <option name="closed" value="true" />
+      <created>1763482852226</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1763482852226</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +228,7 @@
     <MESSAGE value="3.11" />
     <MESSAGE value="6.11" />
     <MESSAGE value="13.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="13.11" />
+    <MESSAGE value="18.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="18.11" />
   </component>
 </project>
