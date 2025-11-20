@@ -1,40 +1,121 @@
 <!-- Use the exact table structure your teacher provided. -->
 
+<!DOCTYPE html>
+<html lang="en">
 
-Step 1 — Copy Teacher’s HTML into Template
-Put the long HTML code into intern_website/index.html.
-Add comments explaining each section:
-<!-- HEADER: company logo, social links, contact info -->
-<!-- MENU: navigation links -->
-<!-- INFO: main content, tables, employee registry -->
+<!-- ========================= HEADER START (HEAD) ========================= -->
+<head>
+    <meta charset="UTF-8">
+    <title>Personnel Registry - Tricell Laboratories</title>
+</head>
+<!-- ========================= HEADER END (HEAD) ========================= -->
 
-Step 2 — Build Real Project Pages
-Copy the structure from the template.
-Create your pages in IT25-22_intern_website:
-index.html: welcome page, logo, links to all pages.
-personnel_registry.html: table with employees (use teacher’s table).
-IT25-01.html, IT25-02.html: each employee’s page with details.
+<!-- ========================= MENU START (BODY) ========================= -->
+<body>
 
-Step 3 — Navigation Menu
-Copy the menu <table> from your teacher’s code into all pages.
-Makes it easy for users to navigate your site.
+<!-- ========================= TABLE START ========================= -->
+<!-- For HTML tables use <tr> (horizontal table row), contains one or more <td> (or <th> stands for table data) and represents on single cell. <td> Can contain text, images, links, or even another table -->
+<table border="0" cellspacing="0" cellpadding="0"> <!-- Essentially, this creates a “tight” table with no extra spacing -->
+    <tr>
+        <td height="30" colspan="2"></td> <!-- Top spacing, This row is used to add top padding/spacing above the content -->
+    </tr>
+    <tr>
+        <td width="50"></td> <!-- Left spacing -->
+        <td width="293" height="90">
+            <img src="images/logo.gif" alt="TRICELL LABORATORIES"/> <!-- Logo -->
+        </td>
+    </tr>
+    <tr>
+        <td height="30" colspan="2"></td> <!-- Bottom spacing -->
+    </tr>
+</table>
+<!-- ========================= TABLE END ========================= -->
 
-Step 4 — Adjust Info Section
-Optional: remove the green bars, move headlines inside boxes, make it easier to read.
-    <!-- Before -->
-<td height="30" bgcolor="#274f26">Personnel Registry</td>
+<!-- ========================= GREEN BAR START ========================= -->
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td rowspan="4" width="110"></td> <!-- Left margin -->
+        <td rowspan="4" width="1" bgcolor="#000000"></td> <!-- Black vertical line left -->
+        <td width="756" height="1" bgcolor="#000000"></td> <!-- Top black line -->
+        <td rowspan="4" width="1" bgcolor="#000000"></td> <!-- Right black line -->
+    </tr>
+    <tr></tr>
+    <tr>
+        <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle"> <!-- This row contains the main green bar content -->
+            <font size="4" face="arial" color="#ffffff"><b>&nbsp;&nbsp;Personnel Registry</b></font> <!-- text label with 2 non-breaking spaces before it for padding -->
+        </td>
+    </tr>
+    <tr>
+        <td width="756" height="1" bgcolor="#000000"></td> <!-- Bottom black line -->
+    </tr>
+</table>
+<!-- ========================= GREEN BAR END ========================= -->
 
-<!-- After -->
-<div style="background-color:#f5f5f5; padding:10px;">
-  <h2>Personnel Registry</h2>
-</div>
+<!-- ========================= EMPLOYEE TABLE START ========================= -->
+<table border="0" cellspacing="0" cellpadding="0"> <!-- Starts the table, makes a tight layout table for precise control -->
+    <tr>
+        <td height="30" width="130" align="center" valign="middle" bgcolor="#b0dfdf">
+            <font size="2" face="arial" color="#ffffff"><b>EMPLOYEE CODE</b></font> <!-- Text is “EMPLOYEE CODE”, which is the column title. -->
+        </td>
+        <td width="1" bgcolor="#000000"></td> <!-- Small 1-pixel cell acting as a vertical black line between columns -->
+        <td height="30" width="210" align="left" valign="middle" bgcolor="#548d8d">
+            <font size="3" face="arial" color="#ffffff"><b>&nbsp;NAME</b></font> <!-- &nbsp;NAME simply adds a space before the word "NAME" -->
+        </td>
+        <td width="1" bgcolor="#000000"></td>
+        <td height="30" width="130" align="center" valign="middle" bgcolor="#b0dfdf">
+            <font size="2" face="arial" color="#ffffff"><b>SIGNATURE DATE</b></font> <!-- Column header for “SIGNATURE DATE” -->
+        </td>
+        <td width="1" bgcolor="#000000"></td>
+        <td height="30" width="130" align="center" valign="middle" bgcolor="#b0dfdf">
+            <font size="2" face="arial" color="#ffffff"><b>RANK</b></font> <!-- Column header for “RANK” -->
+        </td>
+        <td width="1" bgcolor="#000000"></td>
+        <td height="30" width="116" align="center" valign="middle" bgcolor="#b0dfdf">
+            <font size="2" face="arial" color="#ffffff"><b>ACCESS LEVEL</b></font> <!-- Column header for “ACCESS LEVEL” -->
+        </td>
+    </tr>
+</table>
+<!-- ========================= EMPLOYEE TABLE END ========================= -->
 
-    Step 5 — Notes in Template
-
-For each table, row, or section, write a note:
-
-<!-- This row contains employee ID -->
-<!-- This column shows the employee name and link -->
+</body>
+<!-- ========================= MENU END (BODY) ========================= -->
+</html>
+<!-- Use the exact table structure your teacher provided. -->
 
 
-This will help when you create future internal websites.
+
+
+
+
+
+
+
+
+
+
+
+What you already have:
+DOCTYPE and <html> structure ✅
+<head> section with charset and title ✅
+<body> section ✅
+Logo table at the top ✅
+Green “Personnel Registry” header bar ✅
+Table headers for employee info (EMPLOYEE CODE, NAME, SIGNATURE DATE, RANK, ACCESS LEVEL) ✅
+
+What’s still left to do:
+
+contact info etc
+
+1. Add Employee Rows
+You need one <tr> per employee with <td>s for each column.
+2. Close the Employee Table
+After all rows, make sure you close the <table> tag.
+3. Add Bottom Spacing (optional)
+Usually add a few empty rows or a fixed-height <tr> for spacing under the table:
+4. Optional Sections
+    If you want to match your IT25-22 style, you can add green bars + tables for additional info like:
+    Background
+    Strengths
+    Weaknesses
+Structure is exactly like the green bar and table you already used.
+5. Close <body> and <html> ✅ (already done)
