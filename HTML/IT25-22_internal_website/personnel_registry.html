@@ -1,3 +1,32 @@
+<!-- slutet av doc  -->
+<!-- What you already have:
+DOCTYPE and <html> structure ✅
+<head> section with charset and title ✅
+<body> section ✅
+Logo table at the top ✅
+Green “Personnel Registry” header bar ✅
+Table headers for employee info (EMPLOYEE CODE, NAME, SIGNATURE DATE, RANK, ACCESS LEVEL) ✅
+
+What’s still left to do:
+
+contact info etc
+
+1. Add Employee Rows ✅
+You need one <tr> per employee with <td>s for each column.
+2. Close the Employee Table
+After all rows, make sure you close the <table> tag.
+3. Add Bottom Spacing (optional)
+Usually add a few empty rows or a fixed-height <tr> for spacing under the table:
+4. Optional Sections
+    If you want to match your IT25-22 style, you can add green bars + tables for additional info like:
+    Background
+    Strengths
+    Weaknesses
+Structure is exactly like the green bar and table you already used.
+5. Close <body> and <html> ✅ (already done) -->
+
+                                                    <!-- FORTSÄTT PÅ DENNA! -->
+
 <!-- Use the exact table structure your teacher provided. -->
 
 <!DOCTYPE html>
@@ -34,19 +63,10 @@
 <!-- ========================= GREEN BAR START ========================= -->
 <table border="0" cellspacing="0" cellpadding="0">
     <tr>
-        <td rowspan="4" width="110"></td> <!-- Left margin -->
-        <td rowspan="4" width="1" bgcolor="#000000"></td> <!-- Black vertical line left -->
-        <td width="756" height="1" bgcolor="#000000"></td> <!-- Top black line -->
-        <td rowspan="4" width="1" bgcolor="#000000"></td> <!-- Right black line -->
-    </tr>
-    <tr></tr>
-    <tr>
-        <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle"> <!-- This row contains the main green bar content -->
+        <td width="50"></td> <!-- Match left spacing with table -->
+        <td width="756" height="30" bgcolor="#274f26" align="left" valign="middle">
             <font size="4" face="arial" color="#ffffff"><b>&nbsp;&nbsp;Personnel Registry</b></font> <!-- text label with 2 non-breaking spaces before it for padding -->
         </td>
-    </tr>
-    <tr>
-        <td width="756" height="1" bgcolor="#000000"></td> <!-- Bottom black line -->
     </tr>
 </table>
 <!-- ========================= GREEN BAR END ========================= -->
@@ -55,7 +75,7 @@
 <table border="0" cellspacing="0" cellpadding="0"> <!-- Starts the table, makes a tight layout table for precise control -->
     <tr>
         <td height="30" width="130" align="center" valign="middle" bgcolor="#b0dfdf">
-            <font size="2" face="arial" color="#ffffff"><b>EMPLOYEE CODE</b></font> <!-- Text is “EMPLOYEE CODE”, which is the column title. -->
+            <font size="2" face="arial" color="#ffffff"><b>CODE</b></font> <!-- Text is “EMPLOYEE CODE”, which is the column title. -->
         </td>
         <td width="1" bgcolor="#000000"></td> <!-- Small 1-pixel cell acting as a vertical black line between columns -->
         <td height="30" width="210" align="left" valign="middle" bgcolor="#548d8d">
@@ -74,48 +94,48 @@
             <font size="2" face="arial" color="#ffffff"><b>ACCESS LEVEL</b></font> <!-- Column header for “ACCESS LEVEL” -->
         </td>
     </tr>
+
+    <!-- ========================= EMPLOYEE ROWS ========================= -->
+    <tr>
+        <td height="26" align="center" valign="middle">TR-002</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td valign="middle">&nbsp;Employee Two</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">2025-12-02</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">Researcher</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">Level 2</td>
+    </tr>
+
+    <tr>
+        <td height="26" align="center" valign="middle">TR-003</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td valign="middle">&nbsp;Employee Three</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">2025-12-03</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">Assistant</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">Level 1</td>
+    </tr>
+
+    <tr>
+        <td height="26" align="center" valign="middle">TR-004</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td valign="middle">&nbsp;Employee Four</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">2025-12-04</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">Intern</td>
+        <td width="1" bgcolor="#000000"></td>
+        <td align="center" valign="middle">Level 0</td>
+    </tr>
 </table>
 <!-- ========================= EMPLOYEE TABLE END ========================= -->
 
 </body>
 <!-- ========================= MENU END (BODY) ========================= -->
 </html>
-<!-- Use the exact table structure your teacher provided. -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-What you already have:
-DOCTYPE and <html> structure ✅
-<head> section with charset and title ✅
-<body> section ✅
-Logo table at the top ✅
-Green “Personnel Registry” header bar ✅
-Table headers for employee info (EMPLOYEE CODE, NAME, SIGNATURE DATE, RANK, ACCESS LEVEL) ✅
-
-What’s still left to do:
-
-contact info etc
-
-1. Add Employee Rows
-You need one <tr> per employee with <td>s for each column.
-2. Close the Employee Table
-After all rows, make sure you close the <table> tag.
-3. Add Bottom Spacing (optional)
-Usually add a few empty rows or a fixed-height <tr> for spacing under the table:
-4. Optional Sections
-    If you want to match your IT25-22 style, you can add green bars + tables for additional info like:
-    Background
-    Strengths
-    Weaknesses
-Structure is exactly like the green bar and table you already used.
-5. Close <body> and <html> ✅ (already done)
