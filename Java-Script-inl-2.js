@@ -8,7 +8,6 @@ function normalizeReverseKeyGen(input) {
     // 1. lowercase
     let text = input.toLowerCase();
 
-
     // 2. ersätt svenska tecken
     text = text.replace(/å/g, "a")
                .replace(/ä/g, "a")
@@ -125,7 +124,6 @@ function encryptMessage(input) {
 // Körning
 let encrypted = encryptMessage("Frusenbilruta");
 console.log("Krypterat: " + encrypted);
-
 
 
 
