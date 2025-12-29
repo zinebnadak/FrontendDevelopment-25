@@ -1,8 +1,3 @@
-// The purpose of this project is, within the framework of the Front-End Development course, to develop a new, updated version of the Tricell Encryption Algorithm (version 2.0) from the previous course, Intro to IT, using JavaScript.
-// The assignment involved constructing a more complex encryption algorithm consisting of at least three interconnected functions in series.
-// Each function was to handle specific input and return a value to the next step in the chain.
-// The following report documents the technical solution, source code, as well as an analysis of the results and the division of work within the group.
-
 // Funktion 1
 function normalizeReverseKeyGen(input) {
     let text = input.toLowerCase();
@@ -26,8 +21,6 @@ function normalizeReverseKeyGen(input) {
 }
 
 
-
-// Funktion 2
 // Funktion 2
 function blockShuffleAndCaesar(data) {
     let text = data.text;
@@ -60,7 +53,6 @@ function blockShuffleAndCaesar(data) {
         key: key
     };
 }
-
 
 
 // Funktion 3

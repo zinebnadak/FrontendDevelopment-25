@@ -20,6 +20,10 @@ Reverse Block Shuffle: Dela upp texten i block om 3. Rotera varje block bakåt m
 
 Verktygstips för Cryptii: Om ni använder Cryptii, ställ in "Alphabet" till vår specialsträng ovan. Kom ihåg att vår algoritm använder en dynamisk förskjutning, så en vanlig Vigenère kan kräva att ni matchar nyckeln CRYPTOWARDEN om ni implementerar det steget i er de-krypterare.
 
+// The purpose of this project is, within the framework of the Front-End Development course, to develop a new, updated version of the Tricell Encryption Algorithm (version 2.0) from the previous course, Intro to IT, using JavaScript.
+// The assignment involved constructing a more complex encryption algorithm consisting of at least three interconnected functions in series.
+// Each function was to handle specific input and return a value to the next step in the chain.
+// The following report documents the technical solution, source code, as well as an analysis of the results and the division of work within the group.
 
 
 
