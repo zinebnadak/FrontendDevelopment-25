@@ -1,0 +1,335 @@
+#Okey Zineb habibty
+#Okey
+#Remember how to open and test your .html file (that you’ve written in PyCharm) this will be your routine:
+
+--- 03 HTML ---
+# These two methods
+# Or just copy the path by clicking on "project" on the left handside and then paste in web browser
+
+#Method 1
+Using PyCharm to Open the HTML File
+If you’re using PyCharm and have an HTML file ready, here’s how to open it directly from the IDE:
+1. Locate the file in PyCharm:
+    * In PyCharm, open the project where you’ve written your .html file.
+    * In the "Project" pane on the left, navigate to the folder that contains your HTML file.
+2. Open the HTML file:
+    * Double-click on the .html file to open it in the editor.
+3. Preview the HTML file:
+    * If you have the "Web Browser" tool enabled (usually in the lower-right corner or toolbar):
+        * You might see a little icon (like a browser) to the right of the editor. Clicking that should open your HTML file in the default web browser directly.
+        * This works for testing basic static files like HTML, CSS, and images.
+
+
+#Method 2
+Opening HTML Locally on Your Computer with Python's Built-In Web Server
+This method involves creating a folder to store your HTML and any other assets (like images or gifs), then testing it locally via a Python web server. Here’s a detailed guide:
+
+Step 1: Create a Folder Locally
+1. Open Finder on your Mac.
+2. Navigate to your Home folder (or any folder where you want to store your project).
+3. Create a New Folder:
+    * Right-click or use the "New Folder" option, and name it something relevant like html_test_project.
+
+Step 2: Add HTML File and Other Assets
+1. Place your .html file inside this newly created folder.
+2. If you have any images (like gifs or pictures), make sure you place them in the same folder as your .html file.
+    * For example, if you have an image called myimage.gif, make sure it’s in the same folder as your index.html.
+3. Update the HTML to reference the image correctly:
+    * In your HTML file, make sure the image or gif is referenced correctly, like this:
+img src="myimage.gif" alt="Description of the image"  
+
+Step 3: Open the Terminal and Navigate to Your Folder
+1. Open Terminal on your Mac.
+2. Navigate to your folder by using the cd command:
+cd /path/to/html_test_project  - Replace /path/to/html_test_project with the actual path to your folder. For example, if you put it in your home folder, it might look like:  cd ~/html_test_project  
+
+Step 4: Start a Local Web Server Using Python
+1. Run the Python web server:
+    * Once inside the folder with your HTML and image files, run the following command:
+
+python3 -m http.server  
+    * This starts a simple HTTP server on your computer. By default, it listens on port 8000.
+1. Server will start and should show output similar to this:  Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000) ...  
+
+Step 5: Open the HTML File in a Browser
+1. Open your web browser (e.g., Google Chrome, Safari, etc.).
+2. Go to the URL:
+    * Type the following in the address bar:  http://localhost:8000/index.html 
+        * Make sure you use the correct file name if your file is named differently (like home.html or my_page.html).
+    * You should now be able to see your HTML file rendered in the browser!
+
+Troubleshooting Tips
+* Images Not Showing: If your images or gifs are not displaying, make sure the paths are correct in your HTML file (i.e., they should be relative paths like src="myimage.gif" if both files are in the same folder).
+* Port Conflict: If port 8000 is already in use, you can specify a different port by running:  python3 -m http.server 8080  Then visit http://localhost:8080 in your browser.
+
+
+
+# Introduction to HTML (Hypertext Markup Language) for a deeper dive into UI
+# use sublime for mac as editor (for windows use notepad as editor)
+# It’s not a programming language — it’s a markup language, which means it’s used to structure content.
+# Think of HTML as “telling the browser what kind of content something is.”
+
+--- 03 HTML 1 ---
+
+#1 Briefly explain HTML 4, HTML 5 and XHTML!
+# HTML 4.01 (released in 1999) was essentially a minor revision of HTML 4,and aimed to separate content from presentation, encouraging the use of CSS (Cascading Style Sheets) for styling instead of inline attributes. It introduced a more structured and semantic way of building web pages.
+# HTML5 introduced many new elements and features to support modern web applications, multimedia, and better performance on mobile devices. It also made the syntax cleaner and more flexible. HTML5 includes new semantic elements and better support for APIs, like audio, video, and geolocation.
+# XHTML was developed to combine HTML's ease of use with XML's strict syntax rules. It was intended to make HTML documents more reliable and consistent by enforcing a stricter syntax. XHTML must be well-formed XML, which means:
+- All tags must be closed (e.g., <br />, <img />).
+- Tags must be properly nested.
+- All attribute values must be quoted (e.g., src="image.jpg").
+- The document must have a proper DOCTYPE and comply with XML’s case-sensitivity (all tags must be lowercase).
+
+#2 What are elements and tags? (and attributes)
+# Fundamental concepts that help define the structure and content of a web page.
+
+# An HTML element is a complete structure used to define content on a webpage. It consists of an opening tag, content (optional), and a closing tag. The element tells the browser what kind of content it is displaying and how to structure it.
+Basic Structure of an Element:
+<tagname> Content goes here </tagname>
+
+examples of different elements:
+<p> is an element that defines a paragraph of text.
+<h1> is an element used to define the largest heading.
+
+
+# A tag is a part of an HTML element and defines the type of the element. There are two types of tags:
+- Opening tag: Marks the beginning of an element. <tagname>
+- Closing tag: Marks the end of an element. </tagname> (note the forward slash / before the tag name)
+
+Attributes provide additional information about an element, such as styles, classes, or other properties. They are written inside the opening tag and are usually composed of a name and a value.
+<tagname attribute="value">Content goes here</tagname>
+
+#3 Common HTML Tags
+<html>: Defines the start of an HTML document.
+<head>: Contains meta-information, links to stylesheets, and other resources.
+<body>: Contains the content of the webpage that the user will see.
+<h1> to <h6>: Heading tags. <h1> is the most important and largest, <h6> is the smallest.
+<p>: Represents a paragraph.
+<a>: Anchor tag, used to create hyperlinks.
+<img>: element is used to display images on a webpage.
+<ul>: Unordered list.
+<ol>: Ordered list (with numbered items).
+<table>: Creates a table.
+<div>: A generic container used for grouping content (used with CSS for layout)
+<span>: A generic inline container used to style part of a text or other content.
+<br> element is used to insert a line break, which means it moves content to the next line, similar to how pressing Enter works in a text editor.
+
+#4 explain the structure of nested elements in HTML
+elements do always need to be provided in a structrue similar to "onion rings".
+Nesting refers to placing one HTML element inside another. This is a fundamental concept in HTML because it allows you to create complex structures and organize content in a logical, hierarchical way.
+When elements are nested, they form a parent-child relationship, where:
+- The parent element is the element that contains other elements (its children).
+- The child element is the element that is nested inside the parent.
+
+<parent-element>
+    <child-element>
+        <nested-child-element>Content here</nested-child-element>
+    </child-element>
+</parent-element>
+
+
+#5 Explain how Nesting Works with Tags, and its core structure
+In HTML, block-level elements (like <div>, <p>, <h1> to <h6>, etc.) can contain inline elements (like <span>, <a>, <strong>, etc.).
+<p>This is a <strong>bold</strong> text.</p>
+<p> is a block element containing an inline element <strong>.
+<strong> makes the text inside it bold.
+
+
+#6 What is meta data?
+Metadata refers to data about data.
+In the context of web development, meta tags in HTML are used to provide information about a webpage to browsers, search engines, and other external systems.
+
+#7 What does "gif" stand for?
+GIF stands for Graphics Interchange Format. It is a bitmap image format that supports both static and animated images
+
+
+--- 04 HTML 1 ---
+#8 10 most common tags
+
+<h1> or <h6>
+#Headings where h1 is the largest and h6 is the smallest
+
+<p>
+#used for blocks of text. Browsers add space before and after paragraphs automatically
+
+<a>
+# Anchor (link) — used to link to another webpage or a part of the same page. The href attribute defines the link’s destination.
+# <a href="https://google.com"> Visit Google</a>
+
+<img>
+# Image — displays an image on the page. The src attribute specifies the image file, and alt describes it (for accessibility and in case the image can’t load).
+# <img src="cat.jpg" alt="A cute cat"
+
+<ul>
+# Unordered list — creates a list with bullet points. Each item inside must use <li>.
+# <ul><li>Item</li></ul> → Displays a bulleted list with one item.
+
+<ol>
+# Ordered list — creates a numbered list. Each item inside must use <li>
+# <ol><li>First</li></ol> --> Displays a numbered list starting with “1.”
+
+<li>
+# List item — defines an item in either an ordered (<ol>) or unordered (<ul>) list.
+# <li>Item</li> → A single list entry.
+
+<div>
+# Block-level container — used to group larger sections of content (like paragraphs, headings, or images). Often styled with CSS.
+# <div>This is a block.</div> → A block section that starts on a new line.
+
+<span>
+# Inline container — used to group small pieces of text or elements within a line (e.g., to style or highlight them).
+# <span>Highlight this</span> → A short inline element you can style separately.
+
+<br>
+#Line break — forces text to move to a new line. It’s an empty tag (no closing tag)
+
+#9 What is the difference between <head> and <body> in HTML?
+<head> : element contains information about the page — not visible to users — like the title, metadata, links to stylesheets (CSS), and scripts (JavaScript).
+<body> : element contains what users actually see — like text, images, links, and buttons.
+
+#10 What does the <!DOCTYPE html> declaration do?
+Always use the line, and at the very top of your HTML file:
+It tells the browser that the file is an HTML5 document
+Without it the browser might use "quirks mode", which renders the page using outdated rules
+
+#11 What is the purpose of <meta> tags?
+They provide metadata (information about your webpage) that helps browsers and search engines understand your site.
+
+#12 What is the <title> tag used for?
+The text inside <title> appears:
+- In the browser tab
+- In search engine results
+- When you bookmark the page
+
+#13 What is the difference between <div> and <span>?
+- <div> is a block-level element — it takes up the whole width of the page.
+- <span> is an inline element — it only takes up as much space as its content.
+
+----------------> #14 Create a simple HTML file called practice.html that includes:
+- A title that says “Zineb’s Practice Page”
+- A heading that says “Welcome!”
+- A paragraph introducing yourself
+- An image
+- A link to your favorite website
+
+#15 What are text formatting tags in HTML?
+HTML provides several tags to format text, both visually (how the text looks on the page) and semantically (what the text means).
+| Tag        | Meaning                                          | Example                         |
+| ---------- | ------------------------------------------------ | ------------------------------- |
+| `<b>`      | Makes text **bold** (visual only)                | `<b>Bold text</b>`              |
+| `<strong>` | Emphasizes text as *important* (semantic + bold) | `<strong>Important!</strong>`   |
+| `<i>`      | Italic text (visual only)                        | `<i>Italic text</i>`            |
+| `<em>`     | Emphasized text as *important* (semantic + italic)              | `<em>Really!</em>`              |
+| `<u>`      | Underlines text                                  | `<u>Underlined text</u>`        |
+| `<small>`  | Makes text smaller                               | `<small>Small text</small>`     |
+| `<mark>`   | Highlights text                                  | `<mark>Highlighted text</mark>` |
+
+#16 What is the difference between <b> and <strong> (and between <i> and <em>)?
+<b> and <i> are styling tags (visual emphasis).
+<strong> and <em> carry semantic meaning, telling browsers and screen readers that the text is important or stressed.
+
+#17 How do you create a hyperlink?
+Use the <a> (anchor) tag with the href attribute to specify the link’s destination.
+<a href="https://www.google.com">Visit Google</a>
+
+#18 How do you link to another page in the same project?
+You can use relative paths.
+In index.html: <a href="about.html">Go to About Page</a>
+
+#19 how to switch to a new line in HTML?
+Pressing Enter in HTML code does not guarantee a new line in the browser.
+Use <br> for line breaks or block-level elements for larger sections of text.
+
+The <br> tag goes exactly where you want the line to break.
+Usually, it is placed at the end of the line that should end, before the text that should start on a new line.
+It should not be at the very beginning of a block (unless you want the first line to start with a blank line).
+
+#20 How do you create an email link?
+Use the mailto: protocol inside the href (Hypertext REFerence.)
+“mail to”, meaning: “Send an email to this address.”
+
+#21 How do you create a list in HTML?
+There are two main types:
+Unordered list (<ul>) — bullet points
+Ordered list (<ol>) — numbered
+
+<ul>
+  <li>Apples</li>
+  <li>Bananas</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+</ol>
+
+#22 What are nested lists?
+Lists can be placed inside other lists.
+<ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+    </ul>
+  </li>
+  <li>Vegetables</li>
+</ul>
+
+#23 How do you create a line break and a horizontal line?
+<br> = Line break (moves text to a new line)
+<hr> = Horizontal rule (draws a line across the page)
+
+#24 How do you add an image?
+<img src="cat.jpg" alt="An image of a cute cat">
+
+Required: Specifies the path to the image.
+
+Can be:
+Relative path (image in same folder): "cat.jpg"
+Relative path in another folder: "images/cat.jpg"
+Absolute URL: "https://example.com/cat.jpg"
+
+#25 Difference between links
+You need the direct URL of the image, which usually ends with an image file extension like .jpg, .png, or .gif
+
+| Alternativ         | Vad kopieras             | Exempel                             |
+| ------------------ | ------------------------ | ----------------------------------- |
+| Kopiera länkadress | URL som länken pekar på  | `https://www.example.com/page.html` |
+| Kopiera ren länk   | Texten som syns på sidan | `Besök sidan`                       |
+
+Why your image doesn’t appear
+Your src is not a direct image URL.
+You copied the Google search link or the “image preview” URL, not the actual image file.
+This URL doesn’t point directly to the image file, it points to a Google redirect page.
+Browsers can’t display it as an image, so they fallback to showing the alt text: "An image of a cute cat".
+
+Get the link:
+The original image is hosted on... at: https://pethelpful.com/cats/top-10-cutest-cat-photos-of-all-time
+To get the direct image URL, I did this:
+Right-click on the image → “Open image in new tab” (or “Copy image address” depending on browser).
+This gave the exact URL pointing to the image file, which ends in .jpg.
+
+
+# when you use a full-size image from a website, it often loads at its original resolution, which can be huge. In your case, it’s something like 5200×3470 pixels! 😅
+Make it smaller by width and height attributes
+<img src="https://pethelpful.com/.image/c_fill,g_faces:center/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg"
+     alt="An image of a cute cat"
+     width="600">
+
+
+
+----------------> #26 Create a file named text_links_lists.html and include:
+A title: “Zineb’s Formatting Practice”
+A heading that says “Learning Text and Links”
+A paragraph using <b>, <i>, <em>, <mark>
+A link to your favorite site
+An unordered list of your 3 favorite foods
+A horizontal line
+A line that says “Thank you for visiting!”
+
+-----------------> #27 Challenge
+Add a second file named about.html, and from your main page, create a link that says “About Me” → when clicked, it should open about.html.
+
+
+--- 05 HTML 1 ---
+no questions needed, only theory
