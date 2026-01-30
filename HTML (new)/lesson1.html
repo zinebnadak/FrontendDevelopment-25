@@ -1,0 +1,43 @@
+<!-- Notepad (Windows) or Textedit (Mac) or Terminal (cd ~/Desktop - hexdump -C filename.docx | less OR cat filename.docx) -->
+<!-- A Word document isn’t plain text—it’s a binary file (or zipped XML in modern versions).
+Opening it in a text editor shows the raw data, not the readable content.-->
+
+<!-- Word XML is like HTML: both use tags to structure and format text rather than storing plain text alone. -->
+
+
+<!-- tags -->
+<element> information, text etc  </element>
+
+<!-- exceptions -->
+<img src="picture.jpg" alt="description of pic"/>
+<br /> <!-- new line -->
+<p> </p> <!-- This is a paragraph -->
+
+<!-- Nestled element/Onion rings-->
+<div> <h1> <b> Text </b> </h1> </div>
+
+<!-- Attributes, ex I want this text to be 12 in size -->
+<!-- Attributes is always given with =, and the value with ""
+<element attribut="value"> information, text, etc...</element>
+
+
+<!- HTML - document basic structure -->
+
+<html>
+    <head>
+    <title>Tricell Laboratories Inc.</title>
+    </head>
+
+    <body>
+    <div>
+    <h1>Tricell laboratories Inc.</h1>
+    <br />
+    <img src="logo.gif" alt="Tricell Laboratories pic"/>
+    <!-- pic must be in same directory as this document otherwise need to specify the whole path -->
+    <img src="images/logo.gif" alt="Tricell Laboratories pic" />
+    <!-- If your image is in a folder called images inside your project-->
+    </div>
+    </body>
+<!-- nothing can be below body -->
+</html>
+
