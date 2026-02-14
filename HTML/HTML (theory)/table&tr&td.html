@@ -1,0 +1,65 @@
+<!--  How You Form Layout Using Tables -->
+<!--
+You do this:
+1. Create a main table = the entire frame
+2. Create a row
+3. Decide how many columns that row should have
+4. Put content inside each <td>
+
+Before you write code, ask yourself.
+If necessary, draw it on paper first. If you can visualize the grid, your HTML will not break.
+- How many rows do I need?
+- How many columns are in each row?
+- What goes inside each cell?
+-->
+
+<table border = "1" cellpadding="0" cellspacing="0">
+    <tr>                       <!-- new row -->
+       <td width="50"> </td>   <!-- each td adds a column/cell 50px wide, columns go inside tr (rows) -->
+       <td width="50" height ="50"> </td> <!-- height ="50" affects ALL columns/cells, since all cells in a row share the same row, they must share the same height. Browser silently repairs mistakes -->
+       <td width="50"> </td>
+    </tr>
+    <tr>                       <!-- second row -->
+        <td width="50"> </td>  <!-- one column -->
+        <td width="50" height ="10"> </td>
+        <td width="50"> </td>
+    </tr>
+    <tr>
+        <td colspan="3" height="50"> </td> <!-- colspan contols width , This cell stretches horizontally across 3 columns, So its width is already determined by those columns -->
+    </tr>
+</table>
+
+<!-- Stop thinking in “rows and cells. Start thinking in coordinates. -->
+<!--
+Now we have created:
+| (1,1) | (1,2) | (1,3) |
+| (2,1) | (2,2) | (2,3) |
+|    (3,1)(3,2)(3,3)    |   single cell occupies all three
+-->
+
+<!-- Now we use rowspan, but when you give rowspan a number you need to already have enough of that num of many rows eg. tr:s -->
+<table border="1">
+<tr>
+    <td rowspan="3">X</td> <!-- Think of it like this: rowspan="N" means RESERVE this column position for the next N-1 rows below. -->
+    <td>A</td>
+</tr>
+<tr>
+    <td>B</td>
+</tr>
+<tr>
+    <td>C</td>
+</tr>
+</table>
+
+
+
+
+<!-- SUMMARY
+You need to understand:
+1. A table is a grid.
+2. First row defines columns.
+3. Rows must respect that grid.
+4. colspan = horizontal merge.
+5. rowspan = vertical merge.
+6. Height affects rows. Width affects columns.
+-->
