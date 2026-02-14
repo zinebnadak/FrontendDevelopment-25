@@ -58,67 +58,82 @@
     <td width="1" bgcolor="#000000"><!-- Black 1px line --> </td>
     <td width="756" background="images/tablebg.gif"><!-- Main content or background -->
 
-        <!-- MIDDLE TABLE START -->
-        <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td colspan="5" height="30" width="756"><!-- Space upwards--> </td>
-          </tr>
+<!-- MIDDLE TABLE START -->
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="5" height="30" width="756"><!-- Space upwards--> </td>
+  </tr>
 
-          <tr>
-            <td width="30"><!-- space to the left--></td>
-            <td width="166" valign="top"><!-- force to be on the top as much as possible--> </td>
+  <tr>
+    <td width="30"><!-- space to the left--></td>
 
-                  <!-- INNER TABLE PHOTO START -->
-                  <table border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td colspan="3" height="1" bgcolor="#000000" width="166"><!-- black 1px line--></td>
-                    </tr>
+    <!-- CHANGE: the inner photo table MUST be inside this <td> (your old </td> ended too early) -->
+    <td width="166" valign="top"><!-- force to be on the top as much as possible-->
 
-                    <tr>
-                      <td width="1" bgcolor="#000000"><!-- Black 1px line --></td>
-                      <td width="164" valign="top"> <img src="photos/IT25-22.jpg" width="164" alt="IT25-22"/> </td>
-                      <td width="1" bgcolor="#000000"><!-- Black 1px line --></td>
-                    </tr>
+      <!-- INNER TABLE PHOTO START -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3" height="1" bgcolor="#000000" width="166"><!-- black 1px line--></td>
+        </tr>
 
-                    <tr>
-                      <td colspan="3" height="1" bgcolor="#000000" width="166"><!-- black 1px line--></td>
-                    </tr>
+        <tr>
+          <td width="1" bgcolor="#000000"><!-- Black 1px line --></td>
+          <td width="164" valign="top">
+            <img src="photos/IT25-22.jpg" width="164" alt="IT25-22"/>
+          </td>
+          <td width="1" bgcolor="#000000"><!-- Black 1px line --></td>
+        </tr>
 
-                    <tr>
-                      <td colspan="3" height="10" width="166"><!-- space downwards--></td>
-                    </tr>
+        <tr>
+          <td colspan="3" height="1" bgcolor="#000000" width="166"><!-- black 1px line--></td>
+        </tr>
 
-                    <tr>
-                      <td colspan="3" height="50" width="166" bgcolor = "#c5f7ff" valign="middle" align="center"><!-- here will come text--></td><!-- cell with employee code -->
-                          <font size="2" face="arial" color="#686868"> <b>EMPLOYEE CODE:</b> <br /> </font>
-                          <font size="4" face="arial" color="#000000"> <b>IT25-22</b> </font>
-                    </tr>
+        <tr>
+          <td colspan="3" height="10" width="166"><!-- space downwards--></td>
+        </tr>
 
-                    <tr>
-                      <td colspan="3" height="10" width="166"><!-- space downwards--></td>
-                    </tr>
+        <tr>
+          <!-- CHANGE: removed the premature </td> so the text stays INSIDE the cell -->
+          <td colspan="3" height="50" width="166" bgcolor="#c5f7ff" valign="middle" align="center"><!-- here will come text-->
+            <font size="2" face="arial" color="#686868"><b>EMPLOYEE CODE:</b><br /></font>
+            <font size="4" face="arial" color="#000000"><b>IT25-22</b></font>
+          </td><!-- cell with employee code -->
+        </tr>
 
-                    <tr>
-                      <td colspan="3" height="100" width="166" bgcolor = "#70b8c3" valign="middle" align="center"><!-- here will come text--></td><!-- cell with employee code -->
-                          <font size="2" face="arial" color="#000000"> <b>SECURITY ACESS LEVEL:</b> <br /> </font>
-                          <font size="12" face="arial" color="#000000"> <b>IT25-22</b> </font>
-                    </tr>
+        <tr>
+          <td colspan="3" height="10" width="166"><!-- space downwards--></td>
+        </tr>
 
-                    <tr>
-                      <td colspan="3" height="30" width="166"><!-- space downwards--></td>
-                    </tr>
-                  </table>
-                  <!-- INNER TABLE PHOTO END -->
+        <tr>
+          <!-- CHANGE: removed the premature </td> so the text stays INSIDE the cell -->
+          <td colspan="3" height="100" width="166" bgcolor="#70b8c3" valign="middle" align="center"><!-- here will come text-->
+            <!-- CHANGE: fixed spelling to match the expected label -->
+            <font size="2" face="arial" color="#000000"><b>SECURITY ACCESS LEVEL:</b><br /></font>
+            <!-- CHANGE: should be the access level (e.g., "C") not the employee code -->
+            <font size="12" face="arial" color="#000000"><b>C</b></font>
+          </td><!-- cell with employee code -->
+        </tr>
 
-            <td width="135" valign="top"><!-- --> </td>
-            <td width="245" valign="top"></td>
-            <td width="182" valign="top"></td>
-          </tr>
-          <tr>
-            <td colspan="5" height="1" bgcolor="#000000"><!-- black 1px line--> </td>
-          </tr>
-        </table>
-        <!-- MIDDLE TABLE END -->
+        <tr>
+          <td colspan="3" height="30" width="166"><!-- space downwards--></td>
+        </tr>
+      </table>
+      <!-- INNER TABLE PHOTO END -->
+
+    </td>
+    <!-- CHANGE: closing the <td> AFTER the inner table (this fixes the broken layout) -->
+
+    <td width="135" valign="top"><!-- --> </td>
+    <td width="245" valign="top"></td>
+    <td width="182" valign="top"></td>
+  </tr>
+
+  <tr>
+    <td colspan="5" height="1" bgcolor="#000000"><!-- black 1px line--> </td>
+  </tr>
+</table>
+<!-- MIDDLE TABLE END -->
+
 
     </td>
     <td width="1" bgcolor="#000000"><!-- Black 1px line --> </td>
