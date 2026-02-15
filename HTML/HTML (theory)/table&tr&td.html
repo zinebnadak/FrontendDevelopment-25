@@ -24,7 +24,7 @@ If necessary, draw it on paper first. If you can visualize the grid, your HTML w
         <td width="50" height ="10"> </td>
         <td width="50"> </td>
     </tr>
-    <tr>
+    <tr>                       <!-- third row -->
         <td colspan="3" height="50"> </td> <!-- colspan contols width , This cell stretches horizontally across 3 columns, So its width is already determined by those columns -->
     </tr>
 </table>
@@ -40,8 +40,8 @@ Now we have created:
 <!-- Now we use rowspan, but when you give rowspan a number you need to already have enough of that num of many rows eg. tr:s -->
 <table border="1">
 <tr>
-    <td rowspan="3">X</td> <!-- Think of it like this: rowspan="N" means RESERVE this column position for the next N-1 rows below. -->
-    <td>A</td>
+    <td rowspan="3">X</td> <!-- First column - Think of it like this: rowspan="N" means RESERVE this column position for the next N-1 rows below. -->
+    <td>A</td>             <!-- First colum -->
 </tr>
 <tr>
     <td>B</td>
@@ -57,7 +57,7 @@ Now we have created:
 <!-- SUMMARY
 You need to understand:
 1. A table is a grid.
-2. First row defines columns.
+2. First row (its tds) defines number of columns.
 3. Rows must respect that grid.
 4. colspan = horizontal merge.
 5. rowspan = vertical merge.
