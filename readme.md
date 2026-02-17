@@ -1,5 +1,5 @@
-#HTML HANDS-ON PRACTICE PROJECT
-##IT25-22 Internal Website
+# HTML HANDS-ON PRACTICE PROJECT
+## IT25-22 Internal Website
 
 Description:
 This folder contains my actual course project: a complete internal (intranet-style) website for the fictional company Tricell. The website is not published online; instead, it consists of local HTML files that link to each other.
