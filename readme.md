@@ -1,5 +1,6 @@
-# HTML HANDS-ON PRACTICE PROJECT
-## IT25-22 Internal Website
+# FRONTEND HANDS-ON PRACTICE PROJECT
+## HTML 
+### IT25-22 Internal Website
 
 Description:
 This folder contains my actual course project: a complete internal (intranet-style) website for the fictional company Tricell. The website is not published online; instead, it consists of local HTML files that link to each other.
@@ -30,3 +31,11 @@ HTML learning goals:
 
 Notes:
 This is the live version of the website that I customize, fill with content, and hand in as the final assignment.
+
+## CSS 
+
+## XML 
+
+## JavaScript
+
+## Webbserver
