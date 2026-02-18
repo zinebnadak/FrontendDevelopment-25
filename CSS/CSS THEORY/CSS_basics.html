@@ -1,0 +1,85 @@
+
+<!-- CONTAINERS -->
+<div> ... </div> <!-- It groups elements together for a single common style or Apply JavaScript to them -->
+
+<span> ... </span> <!-- You use it to target small parts of text, ex that is odd inside a div or not  -->
+
+<style>
+    .info
+    {
+        font-size:12;
+        font-face: arial;
+        color: black;
+    }
+</style>
+
+
+<!--  CSS-syntaxes - 4 methods -->
+<style type="text/css">
+
+element {
+    attribute: value;
+}
+
+element.classname {
+    attribute: value;
+}
+
+.classname {
+    attribute: value;
+}
+
+#id {
+    attribute: value;
+}
+</style>
+
+<!-- Example method #1 using classname -->
+.button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+<button class="button">Click me</button>
+
+<!--
+- class="button" attaches a label to the element.
+- .button in CSS targets every element with that class.
+- You can reuse it anywhere
+-->
+
+
+
+<!--  Placement of CSS-code - 3 methods -->
+
+<!-- #1 CSS written inside the same HTML file -->
+<html>
+<head>
+    <style>
+        .infotext {
+            font-size: 12px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="infotext">
+        Infotext...
+    </div>
+</body>
+</html>
+
+
+<!-- #2 CSS External CSS (in a separate file) -->
+<!-- HTML: -->
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- style.css:-->
+.infotext {
+    font-size: 12px;
+    font-family: Arial;
+}
