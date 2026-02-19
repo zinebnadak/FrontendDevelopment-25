@@ -1,0 +1,18 @@
+
+/* This is the CSS file for the index.html page. It defines the styles for the page. */
+body {background-color: #ffffff; font-family:arial, verdana, geneva, helvetica, snas-serif; font-size: 12px; color: #000000;}
+
+/* pseudo-classes like Link States define how links look in different situations */
+a:link {color:#ffffff;text-decoration:none;}
+a:active {color:#aad037;text-decoration:none;}
+a:visited {color:#ffffff;text-decoration:none;}
+a:hover {color:#aad037; text-decoration:none;}
+
+table {border: 0; border-collapse:collapse; border-spacing: 0; padding: 0;}
+
+/* Both target <td> elements. But the second one is more specific.*/
+td {padding: 0px;}
+td.contactinfo {font-size:12px; height:26px; text-align:left; vertical-align:middle; color:#124278;}
+td.contacticon {font-size:26px; width:26px; text-align:left; vertical-align:middle; color:#124278;}
+
+.contacttext { font-size:12px; color:#124278;}
