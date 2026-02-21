@@ -1,4 +1,23 @@
-<!-- eg. IT25-22 (mine) ----->
+<!--
+In older web design, tables were often used to control layout (columns, spacing, borders).
+Modern web development uses semantic HTML elements (div, header, section, etc.)
+for structure, and CSS (Flexbox/Grid) to control positioning and styling.
+
+This version is rewritten without using tables as layout containers.
+
+Level 1 (old approach): Tables were used for full page layout
+(columns, spacing, borders, nested structures).
+
+Level 2 (this version): Div-based layout with CSS positioning,
+while limiting tables to structured content only.
+
+Level 3 (modern standard): Semantic HTML + CSS Flexbox/Grid
+with zero layout tables.
+
+Purpose: to separate structure (HTML) from design (CSS).
+Layout is now handled with CSS instead of nested table containers,
+following modern web development standards.
+-->
 
 
 <html>
@@ -10,7 +29,7 @@
     <!-- =========================
          HEADER (logo area)
     ========================== -->
-    <table border="1" cellpadding="0" cellspacing="0">
+    <table border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td colspan="2" height="44"></td><!-- spacing above logo -->
         <td rowspan="2" width="330" valign="bottom" align="center"></td>
@@ -376,4 +395,4 @@
       </tr>
     </table>
   </body>
-</html>
+</ht

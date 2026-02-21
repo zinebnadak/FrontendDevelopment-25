@@ -88,3 +88,122 @@ element.classname {
 <div style="font-size: 12px; font-family: Arial;">
     Infotext...
 </div>
+
+
+
+
+<!-- ================= Different CSS position values ================= -->
+
+<!-- position: static -->
+<!--
+- Default.
+- Normal document flow.
+- top/left/right/bottom do NOTHING.
+-->
+<style>
+.static-box {
+  position: static;
+  top: 20px; /* Does nothing */
+}
+</style>
+
+<div class="static-box">Static</div>
+
+
+<!-- -------------------------------------------------------- -->
+
+
+<!-- position: relative -->
+<!--
+- Stays in normal flow.
+- Moves relative to its ORIGINAL position.
+- Space is still reserved.
+- IMPORTANT: Creates positioning context for absolute children.
+-->
+<style>
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background: lightgray;
+  width: 150px;
+  height: 100px;
+}
+</style>
+
+<div class="relative-box">Relative</div>
+
+
+<!-- -------------------------------------------------------- -->
+
+
+<!-- position: absolute -->
+<!--
+- Removed from normal flow.
+- Takes up NO space.
+- Positions relative to the NEAREST ancestor that is NOT static.
+- If no positioned parent → positions relative to the page.
+-->
+<style>
+.parent {
+  position: relative; /* Makes this the reference */
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  width: 50px;
+  height: 50px;
+}
+</style>
+
+<div class="parent">
+  <div class="absolute-box"></div>
+</div>
+
+
+<!-- -------------------------------------------------------- -->
+
+
+<!-- position: fixed -->
+<!--
+- Removed from normal flow.
+- Positioned relative to the VIEWPORT.
+- Does NOT move when scrolling.
+-->
+<style>
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  width: 60px;
+  height: 60px;
+}
+</style>
+
+<div class="fixed-box"></div>
+
+
+<!-- -------------------------------------------------------- -->
+
+<!-- MENTAL MODEL
+static   = normal layout
+relative = shift from original spot (and enable absolute children)
+absolute = break out of flow and anchor to parent
+fixed    = anchor to screen
+
+Rule:
+Absolute looks UP the tree for the first positioned parent.
+-->
+
+
+
+
+<!-- ================= Containers ================= -->
+
