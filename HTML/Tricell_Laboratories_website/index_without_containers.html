@@ -1,0 +1,242 @@
+<!--
+In older web design, tables were often used to control layout (columns, spacing, borders).
+Modern web development uses semantic HTML elements (div, header, section, etc.)
+for structure, and CSS (Flexbox/Grid) to control positioning and styling.
+
+This version is rewritten without using tables as layout containers.
+
+Level 1 (old approach): Tables were used for full page layout
+(columns, spacing, borders, nested structures).
+
+Level 2 (this version): Div-based layout with CSS positioning,
+while limiting tables to structured content only.
+
+Level 3 (modern standard): Semantic HTML + CSS Flexbox/Grid
+with zero layout tables.
+
+Purpose: to separate structure (HTML) from design (CSS).
+Layout is now handled with CSS instead of nested table containers,
+following modern web development standards.
+-->
+
+<html>
+
+<head>
+  <title>Tricell Laboratories Inc.</title>
+</head>
+
+<body bgcolor="#ffffff" link="#000000" vlink="#000000" alink="#aad307">
+  <!-- Link colors:
+       link  = unvisited
+       vlink = visited
+       alink = active (while clicking) -->
+
+  <!-- =========================
+       HEADER: Logo + Social + Contact
+       ========================= -->
+
+<!-- Header container start -->
+<div id="headercontainer">
+
+
+     <!-- Container left start -->
+    <div id="header-left">
+          <img src="images/logo.gif" alt="Tricell Laboratories Inc." />
+    </div>
+     <!-- Container left end -->
+
+
+     <!-- Container middle start -->
+    <div id="header-middle">
+          <!-- Social media start -->
+          <table>
+            <tr>
+              <td class="socialicon"><a href="http://www.facebook.com"><img src="images/social_fb.gif" alt="Facebook" /></a></td>
+              <td class="socialicon"><a href="http://www.instagram.com"><img src="images/social_insta.gif" alt="Instagram" /></a></td>
+              <td class="socialicon"><a href="http://www.pinterest.com"><img src="images/social_pin.gif" alt="Pinterest" /></a></td>
+              <td class="socialicon"><a href="http://www.snapchat.com"><img src="images/social_snap.gif" alt="Snapchat" /></a></td>
+              <td class="socialicon"><a href="http://www.x.com"><img src="images/social_twitter.gif" alt="Twitter" /></a></td>
+              <td class="socialicon"><a href="http://www.youtube.com"><img src="images/social_youtube.gif" alt="Youtube" /></a></td>
+            </tr>
+          </table>
+          <!-- Social media end -->
+    </div>
+     <!-- Container middle end -->
+
+
+     <!-- Container right start -->
+     <!-- Contact info (inner table) -->
+    <div id="header-right">
+
+        <table>
+          <tr>
+            <td colspan="2" height="20" width="180" valign="middle" align="center">
+              <font class="contacttext"><b>TRICELL LABORATORIES</b></font>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="contacticon"><img src="images/contact_phone.gif"></td>
+            <td class="contactinfo">&nbsp;+321(555)-12345</font>
+            </td>
+          </tr>
+          <tr>
+            <td class="contacticon"><img src="images/contact_fax.gif"></td>
+            <td class="contactinfo">&nbsp;+321(555)-12345</font>
+            </td>
+          </tr>
+          <tr>
+            <td class="contacticon"><img src="images/contact_mail.gif"></td>
+            <td class="contactinfo">&nbsp;info@tricell.com</font>
+            </td>
+          </tr>
+          <tr>
+            <td class="contacticon"><img src="images/contact_home.gif"></td>
+            <td class="contactinfo"><a href="http://www.tricell.com/" />&nbsp;www.tricell.com</font>
+            </td>
+          </tr>
+        </table>
+        <!-- End contact info -->
+
+    </div>
+
+     <!-- Container right end -->
+</div>
+<!-- Header container end -->
+<!-- End HEADER -->
+
+
+  <!-- =========================
+       NAVIGATION MENU BAR
+       Outer frame + inner menu items
+       ========================= -->
+<div id="menucontainer">
+
+    <table class="mainmenuitem">
+        <tr>
+            <td class="mainmenuicon">
+                <img src="images/menu_company.png" border="0" />
+            </td>
+            <td class="mainmenutext">
+                <a href="company_presentation.html">Company Presentation</a>
+            </td>
+        </tr>
+    </table>
+
+    <table class="mainmenuitem">
+        <tr>
+            <td class="mainmenuicon">
+                <img src="images/menu_history.png" border="0" />
+            </td>
+            <td class="mainmenutext">
+                <a href="history.html">History</a>
+            </td>
+        </tr>
+    </table>
+
+    <table class="mainmenuitem">
+        <tr>
+            <td class="mainmenuicon">
+                <img src="images/menu_board.png" border="0" />
+            </td>
+            <td class="mainmenutext">
+                <a href="board_of_directors.html">Board of Directors</a>
+            </td>
+        </tr>
+    </table>
+
+    <table class="mainmenuitem">
+        <tr>
+            <td class="mainmenuicon">
+                <img src="images/menu_personnel.png" border="0" />
+            </td>
+            <td class="mainmenutext">
+                <a href="personnel_registry.html">Personnel Registry</a>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+<div style="clear: both;"></div>
+
+
+
+<!-- MENU End  -->
+
+
+  <!-- =========================
+       MAIN CONTENT AREA
+       Outer layout table (left margin + borders + content)
+       ========================= -->
+  <table>
+    <tr>
+      <td width="110"><!-- Left margin spacer (aligns content with header layout) --></td>
+      <td width="1" bgcolor="#000000"><!-- Left border line --></td>
+      <td width="756" background="images/tablebg.gif"><!-- Content area (background image) -->
+
+        <!-- Inner content table -->
+        <table>
+          <tr>
+            <td colspan="2" height="20"><!-- Top padding inside content area --></td>
+          </tr>
+
+          <tr>
+            <td width="20"><!-- Left padding inside content area --></td>
+            <td width="736">
+              <font size="3" face="arial" color="#000000"><b>Welcome to Tricell Laboratories Inc.</b></font>
+
+              <br />&nbsp;<br />
+
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="400" valign="top">
+                    <font size="2" face="arial" color="#000000">
+                      TRICELL Laboratories Inc. (Otherwise known simply as Tricell)
+                      is a multi-industrial conglomerate, prominent in the Federation of
+                      Pharmaceutical Companies.
+                      It was a conglomerate of three organizations
+                      descended from Travis Enterprises (founded in 1965 by Henry Travis).
+                      <br />&nbsp;<br />
+                      Its name was derived from the triumvirate of "cells" that formed it.
+                      The company is one of the more prominent members of the Federation of
+                      Pharmaceutical Companies along with companies such as the Umbrella
+                      Corporation.
+                      <br />&nbsp;<br />
+                    </font>
+                  </td>
+
+                  <td width="20" valign="top"><!-- Spacer between text column and image column --></td>
+
+                  <td width="320" valign="top"><img src="images/tricell_welcome.png" alt="Welcome" width="320" /></td>
+                </tr>
+              </table>
+
+              <font size="3" face="arial" color="#000000"><i>Tricell - We care about Your future!</i></font>
+
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" height="20"></td>
+          </tr>
+
+          <tr>
+            <td colspan="2" height="1" bgcolor="#000000"><!-- Bottom border line --></td>
+          </tr>
+        </table>
+
+      </td>
+
+      <td width="1" bgcolor="#000000"><!-- Right border line --></td>
+    </tr>
+
+    <tr>
+      <td colspan="4" height="30"><!-- Bottom spacing below content area --></td>
+    </tr>
+  </table>
+  <!-- End MAIN CONTENT AREA -->
+
+</body>
+
+</html>
