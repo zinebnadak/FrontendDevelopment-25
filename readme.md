@@ -11,7 +11,7 @@ To build a multi-page internal company website using classic HTML techniques, ba
 Pages included:
 - ✅index.html (welcome page)
 - ✅ITXX-01.html, ITXX-02.html, etc. (employee profiles)
-- personnel_registry.html
+- ✅personnel_registry.html
 - company_presentation.html
 - history.html
 - board_of_directors.html
