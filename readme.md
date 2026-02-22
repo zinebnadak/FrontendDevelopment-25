@@ -1,6 +1,7 @@
 # FRONTEND HANDS-ON PRACTICE PROJECT (the frontend of an webapplication)
-## HTML 
 ### Website: www.tricell.local
+
+## HTML 
 
 Description:
 This folder contains my actual course project: a complete internal (intranet-style) website for the fictional company Tricell. The website is not published online; instead, it consists of local HTML files that link to each other.
