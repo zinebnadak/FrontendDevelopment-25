@@ -1,0 +1,20 @@
+<!--
+XML (Extensible Markup Language) is a structured format used to store and transport data.
+
+The rules of HTML comes from XML but XML is not a markup language like HTML.
+It is a meta-language, which means it allows you to create your own custom tags to define the structure and meaning of your data.
+
+Unlike HTML, which focuses on displaying content in a browser, XML focuses on organizing data
+in a clear, hierarchical structure using custom-defined tags.
+
+Key ideas:
+- XML describes data, not presentation.
+- Tags are user-defined (you create the names).
+- Data is structured in nested elements (parent → child).
+- It is both human-readable and machine-readable.
+
+Purpose:
+To separate data from application logic and presentation, allowing systems to exchange
+information in a standardized and structured way.
+-->
+
