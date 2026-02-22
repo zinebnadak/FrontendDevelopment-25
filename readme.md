@@ -149,16 +149,14 @@ Educational implementation:
 - `login_encrypt.html`  
 - `login_decrypt.html`  
 
-### Important
+### Transition to Hashing
 
-This is an educational exercise only.  
-It is not real-world security.
+In this project, we will transition from the Caesar-cipher-based “Tricell Encryption Algorithm 1.0” to **hashing** to understand the difference between encryption and secure password handling.
 
-### Future Improvement
-
-- Hashing implementation demonstration  
-- Conceptual comparison: encryption vs hashing  
-- Why real systems use salted hashing (e.g., bcrypt / Argon2)  
+Planned focus:
+- Implement a hashing-based login demo (frontend simulation)
+- Compare **encryption vs hashing** (what each is for, and why hashing is used for passwords)
+- Explain why real systems use **salted password hashing** (e.g., bcrypt / Argon2) instead of custom encryption 
  
 
 # Webbserver
