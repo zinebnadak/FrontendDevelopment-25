@@ -1,102 +1,176 @@
 # FRONTEND HANDS-ON PRACTICE PROJECT (the frontend of an webapplication)
-### Website: www.tricell.local
 
-## HTML 
+### Project Name: Tricell Intranet (Frontend Simulation)
+### Environment: Local development (www.tricell.local)
+### Scope: Frontend only – no backend, no real database
 
-Description:
-This folder contains my actual course project: a complete internal (intranet-style) website for the fictional company Tricell. The website is not published online; instead, it consists of local HTML files that link to each other.
+# Project Overview
 
-Goal:
-To build a multi-page internal company website using classic HTML techniques, based on the requirements from my teacher.
+This project is a multi-page internal company website built for the fictional corporation **Tricell**.
 
-Pages included:
-- ✓ index.html (welcome page)
-- ✓ ITXX-01.html, ITXX-02.html, etc. (employee profiles)
-- ✓ personnel_registry.html
-- company_presentation.html
-- history.html
-- board_of_directors.html
+It began as a classic HTML intranet site and evolved into a frontend-driven web application using JavaScript.
 
-Requirements implemented:
-- Header with social media icons and contact information
-- Navigation menu under the header
-- Back button leading to index.html
-- Section titles moved inside the info-box layout
-- Removal of green bars from the teacher’s original template
-- Updated info pages with real content
+The system runs locally and simulates internal company tools inside a controlled intranet-style environment.
 
-HTML learning goals:
-- Working with classic HTML layouts using <table> and <font>
-- Understanding how sites were built before CSS
-- Managing images, links, attributes, and multi-page structure
+---
 
-Notes:
-This is the live version of the website that I customize, fill with content, and hand in as the final assignment.
+# HTML – Classic Multi-Page Structure
 
-## CSS 
+## Purpose
 
-The CSS part of the project focuses on layout control, navigation systems,
-and visual structure for a multi-page intranet website.
+To understand how websites were built before modern frameworks and backend integrations.
 
-### Layout & Styling
-- Custom header layout with logo, contact information, and social media icons
-- Structured navigation bar under the header
-- Styled info-box layout for internal content pages
-- Controlled spacing, alignment, and visual hierarchy
-- Removal and redesign of elements from the original template
+## Implemented Features
 
-### Dropdown Navigation
-- Hover-based dropdown menus built using HTML + CSS
-- Nested navigation structure for subpages
-- Visibility controlled through CSS positioning and display properties
-- Demonstrates layered UI behavior (hover states and stacking)
+- Multi-page internal structure  
+- Cross-linked local HTML files  
+- Header containing:
+  - Social media icons  
+  - Contact information  
+- Navigation menu below the header  
+- Back-button navigation  
+- Info-box structured layout  
+- Customized template (removed default green bars)  
+- Updated internal pages with realistic content  
 
-### Slide-Out Site Map (Overview System)
-- Collapsible/slide-out site map panel
-- Toggle button in the top corner
-- Full overview of all pages in the project
-- Hierarchical structure (main sections + subpages)
-- Combined CSS layout control with minimal JavaScript for state toggling
+## Included Pages
 
-### CSS Learning Goals
-- Understanding classic layout methods
-- Managing positioning (relative, absolute, z-index)
-- Building layered UI components
-- Creating interactive navigation without backend logic
+- `index.html` (Welcome page)  
+- `ITXX-01.html`, `ITXX-02.html` (Employee profiles)  
+- `personnel_registry.html`  
+- `company_presentation.html`  
+- `history.html`  
+- `board_of_directors.html`  
 
-## XML 
+## Learning Focus
 
-## JavaScript
+- Classic table-based layouts  
+- Multi-page architecture  
+- Image and link management  
+- File structure organization  
+- Understanding legacy HTML design patterns  
 
-In the JavaScript part of the course, we move from a static website to a frontend-driven web application inside the **Tricell school network**.  
-The project is accessed and tested through the internal Tricell environment (intranet-style), meaning it runs over HTTP on internal servers rather than directly from `file://`.
+---
 
-Scope note: This course covers **frontend only** — there is **no backend** and **no real database** connection.  
-All “application features” are implemented/simulated in JavaScript, with data stored locally in the browser when needed (e.g., LocalStorage).
+# CSS – Layout Systems & Navigation Architecture
 
-### Planned system functionality (frontend simulation)
+## Layout & Visual Control
 
-1. **Login / Authentication (simulated)**
-   - Login flow that controls access to internal pages/features  
-   - No real security (since there is no backend)
+- Custom header layout  
+- Navigation bar styling  
+- Structured content boxes  
+- Controlled spacing and visual hierarchy  
+- Template redesign  
 
-2. **Personnel Register (CRUD)**
-   - Add new staff members  
-   - Update existing employee information  
-   - Delete employee records  
-   - Stored locally in the browser (no database)
+## Dropdown Navigation
 
-3. **Integrated Calculator**
-   - Small internal calculation tool built with JavaScript
+- Hover-based dropdown menus  
+- Nested subpage structure  
+- Visibility controlled using:
+  - `position: relative`  
+  - `position: absolute`  
+  - `z-index`  
+  - `display`  
 
-4. **Headquarters “Virus Database” (CRUD)**
-   - Add new research entries  
-   - Update existing entries  
-   - Delete outdated/incorrect entries  
-   - Stored locally (frontend-only)
+## Slide-Out Site Map
 
-5. **Internal Team Chat (UI simulation)**
-   - Chat interface and message handling in the frontend  
-   - No real-time server communication in this course
+- Toggle button in top corner  
+- Collapsible overview panel  
+- Full hierarchical page map  
+- Combined CSS layering with minimal JavaScript state toggling  
 
-## Webbserver
+## Learning Focus
+
+- Positioning systems (relative, absolute, stacking context)  
+- Layered UI behavior  
+- Navigation systems without backend logic  
+- Separation of structure (HTML) and presentation (CSS)  
+
+---
+# XML
+
+# JavaScript – From Website to Web Application
+
+This stage transitions the project from a static website to a frontend-driven web application.
+
+The system runs inside a simulated intranet environment (HTTP-based, not `file://`).
+
+There is no backend. All features are frontend simulations.
+
+## Implemented / Planned Features
+
+### Login System (Simulated)
+
+- Client-side validation  
+- Access control simulation  
+- No real authentication security  
+
+### Personnel Registry (CRUD)
+
+- Add employees  
+- Update records  
+- Delete records  
+- Data stored in LocalStorage  
+
+### Headquarters Virus Database (CRUD)
+
+- Add research entries  
+- Update entries  
+- Delete outdated data  
+- Stored locally (frontend only)  
+
+### Integrated Calculator
+
+- Internal business calculation tool  
+- JavaScript-based logic  
+
+### Internal Chat Interface
+
+- Frontend-only chat UI  
+- Message handling simulation  
+- No real-time server communication  
+
+---
+
+## Encryption & Security Exercise
+
+Educational implementation:  
+**“Tricell Encryption Algorithm 1.0”**
+
+### Concept
+
+- Based on Caesar cipher shifting  
+- Numeric key encoded as a character  
+- Optional filler characters  
+- Demonstration of encrypt/decrypt flow  
+
+### Files
+
+- `login_encrypt.html`  
+- `login_decrypt.html`  
+
+### Important
+
+This is an educational exercise only.  
+It is not real-world security.
+
+### Future Improvement
+
+- Hashing implementation demonstration  
+- Conceptual comparison: encryption vs hashing  
+- Why real systems use salted hashing (e.g., bcrypt / Argon2)  
+ 
+
+# Webbserver
+
+
+# Core Technical Competencies Demonstrated
+
+- Multi-page frontend architecture  
+- Navigation system engineering  
+- CSS layout control and stacking context  
+- CRUD logic in pure JavaScript  
+- LocalStorage data persistence  
+- State simulation without backend  
+- Basic encryption vs hashing concepts  
+- Transition from static website to frontend web application 
