@@ -1,6 +1,6 @@
 
 <!-- CONTAINERS -->
-<div> ... </div> <!-- It groups elements together for a single common style or Apply JavaScript to them -->
+<div> ... </div> <!-- It groups elements together for a single common style or Apply JavaScript (scripts) to them -->
 
 <span> ... </span> <!-- You use it to target small parts of text, ex that is odd inside a div or not  -->
 
@@ -54,7 +54,7 @@ element.classname {
 
 <!--  Placement of CSS-code - 3 methods -->
 
-<!-- #1 CSS written inside the same HTML file -->
+<!-- #1 CSS written inside the same HTML&CSS&XML&JavaScript (scripts) file -->
 <html>
 <head>
     <style>
@@ -74,7 +74,7 @@ element.classname {
 
 
 <!-- #2 CSS External CSS (in a separate file) -->
-<!-- HTML: -->
+<!-- HTML&CSS&XML&JavaScript (scripts): -->
 <head>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -203,7 +203,67 @@ Absolute looks UP the tree for the first positioned parent.
 -->
 
 
-
-
 <!-- ================= Containers ================= -->
+<!--
+CONTAINERS (Structure & Layout Control)
 
+A container is usually a <div> used to group content together.
+
+Purpose:
+- Control layout (width, spacing, alignment)
+- Apply shared styling
+- Structure the page clearly
+
+Containers do NOT style by themselves.
+CSS controls how they behave (flexbox, grid, width, margin, etc).
+
+Example:
+<div class="container">
+  <h1>Title</h1>
+  <p>Content here</p>
+</div>
+
+<style>
+.container {
+  width: 800px;
+  margin: 0 auto;   /* center horizontally */
+}
+</style>
+
+Think of containers as boxes that hold and organize content.
+-->
+
+<!-- ================= SELECTORS CSS =================
+starts with # → targets element with specific id (unique)
+starts with . → targets all elements with that class (reusable)
+element name → targets all elements of that type (e.g. p, h1)
+
+
+
+<!-- ================= Z-INDEX (Layer order) =================
+Higher z-index = appears on top.
+Only works on positioned elements (position: relative, absolute, fixed, sticky).
+
+Example:
+<style>
+.box1 {
+  position: relative;
+  z-index: 1;
+}
+
+.box2 {
+  position: relative;
+  z-index: 10; /* appears above box1 */
+}
+</style>
+
+
+VISIBILITY
+visibility: hidden;  → Invisible but still takes space.
+visibility: visible; → Visible again.
+
+
+DISPLAY
+display: none;  → Completely removed from layout (no space).
+display: block; → Shows element again.
+-->

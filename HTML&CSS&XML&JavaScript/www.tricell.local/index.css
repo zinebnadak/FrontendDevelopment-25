@@ -1,0 +1,297 @@
+/* Right header column (contact section in header) */
+#headerright
+{
+	margin-left: 30px;   /* Space from previous header column */
+	height: 130px;       /* Fixed height matching header layout */
+	width: 180px;        /* Fixed width for contact block */
+}
+
+/* Social media icon table cell */
+td.socialicon
+{
+	width: 40px;         /* Width for each social icon */
+	height: 130px;       /* Same height as header */
+	text-align: center;  /* Center icon horizontally */
+	vertical-align: bottom; /* Align icon to bottom of cell */
+}
+
+/* Contact heading (e.g. company name) */
+.contactheading
+{
+	font-size: 11px;     /* Small heading size */
+	color: #124278;      /* Dark blue text color */
+	font-weight: bold;   /* Bold text */
+}
+
+/* Contact information text (phone, fax, email) */
+.contactinfo
+{
+	font-size: 12px;     /* Slightly larger than heading */
+}
+
+/* Small contact icon cell (phone, mail, etc.) */
+td.contacticon
+{
+	width: 26px;         /* Fixed icon width */
+	height: 26px;        /* Fixed icon height */
+	text-align: left;    /* Align icon left */
+	vertical-align: middle; /* Center icon vertically */
+}
+
+/* Contact text next to icon */
+td.contacttext
+{
+	height: 26px;        /* Match icon height */
+	text-align; left;    /* Horizontal alignment (original syntax kept) */
+	vertical-align: middle; /* Vertical alignment */
+	color: #124278;      /* Blue text color */
+}
+
+/* Main menu without Back button */
+#mainmenu	/* menyn utan Back-knappen */
+{
+	width: 758px;            /* Menu width */
+	height: 30px;            /* Menu height */
+	margin-left: 110px;      /* Left alignment with content */
+	border: 1px solid;       /* Border style */
+	border-color: #000000;   /* Border color */
+	background-color: #274f26; /* Green background */
+	padding: 0px;            /* No inner spacing */
+	text-align: center;      /* Center menu content */
+}
+
+/* Main menu with Back button */
+#mainmenuback	/* menyn med Back-knappen */
+{
+	width: 788px;            /* Slightly wider */
+	height: 30px;
+	margin-left: 80px;       /* Adjusted left spacing */
+	border: 1px solid;
+	border-color: #000000;
+	background-color: #274f26;
+	padding: 0px;
+	text-align: center;
+}
+
+/* Menu container without Back button */
+#menucontainer	/* menyn utan Back-knappen */
+{
+	width: 758px;
+	height: 30px;
+	margin-left: 110px;
+	border: 1px solid;
+	border-color: #000000;
+	background-color: #274f26;
+	padding: 0px;
+	text-align: center;
+	position: relative;      /* Allows positioning inside */
+}
+
+/* Menu container with Back button */
+#menucontainerback	/* menyn utan Back-knappen */
+{
+	width: 788px;
+	height: 30px;
+	margin-left: 80px;
+	border: 1px solid;
+	border-color: #000000;
+	background-color: #274f26;
+	padding: 0px;
+	text-align: center;
+	position: relative;
+}
+
+/* Individual menu item block */
+.menuitem
+{
+	position: relative;  /* Positioned relative to itself */
+	float: left;         /* Align items horizontally */
+}
+
+/* Menu icon cell */
+td.mainmenuicon
+{
+	width: 34px;         /* Icon width */
+	height: 30px;        /* Match menu height */
+	text-align: center;  /* Center icon */
+	vertical-align: middle; /* Center vertically */
+}
+
+/* Menu text cell */
+td.mainmenutext
+{
+	height: 26px;
+	text-align; left;        /* Horizontal alignment (original syntax kept) */
+	vertical-align: middle;
+	color: #124278;          /* Blue text color */
+	font-size: 14px;         /* Text size */
+	font-weight: bold;       /* Bold menu text */
+	padding-right: 30px;     /* Space before divider */
+}
+
+/* Vertical divider between menu items */
+td.menuitemdivider
+{
+	width: 1px;              /* Thin divider */
+	height: 30px;            /* Full menu height */
+	background-color: #ffffff; /* White color */
+}
+
+/* Hover state for menu item */
+.menuitem:hover
+{
+	display: block;          /* Display behavior on hover */
+}
+
+/* Information table layout */
+.infotable
+{
+	width: 758px;            /* Same width as menu */
+	margin-left: 110px;      /* Align with menu */
+	border: 1px solid;
+	border-color: #000000;
+	background-image: url("../images/tablebg.gif"); /* Background texture */
+	margin-bottom: 20px;     /* Space below */
+}
+
+/* Cell inside info table */
+.infotablecell
+{
+	padding: 20px;           /* Inner spacing */
+	text-align: left;
+	vertical-align: top;
+}
+
+/* Div-based alternative to table layout */
+.infodiv
+{
+	width: 718px;            /* Slightly smaller to account for padding */
+	margin-left: 110px;
+	border: 1px solid;
+	border-color: #000000;
+	background-image: url("../images/tablebg.gif");
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+/* Main heading */
+h1
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* Sub heading */
+h2
+{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* Smaller heading */
+h3
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+body
+{
+	background-color: #ffffff;
+	font-family : Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+a:link { color:#ffffff; text-decoration: none; }
+a:active { color:#aad037; text-decoration: none; }
+a:visited { color:#ffffff; text-decoration: none; }
+a:hover { color:#aad03720; text-decoration: underline; }
+#menucontainer	/* menyn utan Back-knappen */
+{
+	width: 758px;
+	height: 30px;
+	margin-left: 110px;
+	border: 1px solid;
+	border-color: #000000;
+	background-color: #274f26;
+	padding: 0px;
+	text-align: center;
+	position: relative;
+}
+#menucontainerback	/* menyn utan Back-knappen */
+{
+	width: 788px;
+	height: 30px;
+	margin-left: 80px;
+	border: 1px solid;
+	border-color: #000000;
+	background-color: #274f26;
+	padding: 0px;
+	text-align: center;
+	position: relative;
+}
+.menuitem
+{
+	position: relative;
+	float: left;
+}
+td.mainmenuicon
+{
+	width: 34px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+}
+td.mainmenutext
+{
+	height: 26px;
+	text-align; left;
+	vertical-align: middle;
+	color: #124278;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 30px;
+}
+.menuitem:hover .menudropitem
+{
+	display: block;
+}
+.menudropitem
+{
+	display: none;
+	position: absolute;
+
+	z-index: 1;
+}
+td.mainmenudroptext
+{
+	height: 26px;
+	min-width: 180px;
+	text-align; left;
+	vertical-align: middle;
+	background-color: #aad037;
+	border: 1px solid;
+	border-color: #000000;
+	font-size: 12px;
+	color: #000000;
+	padding: 5px;
+}
+</style>
+
+

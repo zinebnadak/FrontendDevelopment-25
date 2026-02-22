@@ -1,0 +1,182 @@
+<!--
+In older web design, divs were often used to control layout (columns, spacing, borders).
+Modern web development uses semantic HTML&CSS&XML&JavaScript (scripts) elements (div, header, section, etc.)
+for structure, and CSS (Flexbox/Grid) to control positioning and styling.
+
+This version is rewritten without using divs as layout containers.
+
+Level 1 (old approach): Tables were used for full page layout
+(columns, spacing, borders, nested structures).
+
+Level 2 (this version): Div-based layout with CSS positioning,
+while limiting divs to structured content only.
+
+Level 3 (modern standard): Semantic HTML&CSS&XML&JavaScript (scripts) + CSS Flexbox/Grid
+with zero layout divs.
+
+Purpose: to separate structure (HTML&CSS&XML&JavaScript (scripts)) from design (CSS).
+Layout is now handled with CSS instead of nested div containers,
+following modern web development standards.
+-->
+
+<head>
+<title>Tricell Laboratories Inc</title>
+
+<link rel="stylesheet" href="css/index.css"><!-- Gemensam CSS -->
+
+<!-- Egna CSS-definitioner som berör endast denna sida -->
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<!------------------------- Header start ------------------------------>
+
+<div id="headercontainer">
+
+	<!-- Headerleft start -->
+	<div id="headerleft">
+		<img id="headerlogo" src="images/logo.gif" alt="Tricell Laboratories" />
+	</div>
+	<!-- Headerleft slut -->
+
+	<!-- Headermiddle start -->
+	<div id="headermiddle">
+		<!-- Sociala-medier start -->
+		<table>
+		 <tr>
+		  <td class="socialicon"><a href="http://www.facebook.com"><img src="images/social_fb.gif" alt="Facebook" border="0" /></a></td>
+		  <td class="socialicon"><a href="http://www.instagram.com"><img src="images/social_insta.gif" alt="Instagram" border="0" /></a></td>
+		  <td class="socialicon"><a href="http://www.twitter.com"><img src="images/social_twitter.gif" alt="Twitter" border="0" /></a></td>
+		  <td class="socialicon"><a href="http://www.youtube.com"><img src="images/social_youtube.gif" alt="Youtube" border="0" /></a></td>
+		  <td class="socialicon"><a href="http://www.pinterest.com"><img src="images/social_pin.gif" alt="Pinterest" border="0" /></a></td>
+		  <td class="socialicon"><a href="http://www.snapchat.com"><img src="images/social_snap.gif" alt="Snapchat" border="0" /></a></td>
+		 </tr>
+	 	</table>
+		<!-- Sociala-medier slut -->
+	</div>
+	<!-- Headermiddle slut -->
+
+	<!-- Headerright start -->
+	<div id="headerright">
+		<!-- Kontaktuppgifter start -->
+		<table>
+		 <tr>
+		  <td colspan="2" height="20" valign="top" align="center"><font class="contactheading">TRICELL LABORATORIES</font><td>
+		 </tr>
+		 <tr>
+		  <td class="contacticon"><img src="images/contact_phone.gif" alt="Phone" border="0" /></td>
+		  <td class="contactinfo">+324 (555)-541 236</td>
+		 </tr>
+		 <tr>
+		  <td class="contacticon"><img src="images/contact_fax.gif" alt="Fax" border="0" /></td>
+		  <td class="contactinfo">+324 (555)-543 626</td>
+		 </tr>
+		 <tr>
+		  <td class="contacticon"><img src="images/contact_mail.gif" alt="Mail" border="0" /></td>
+		  <td class="contactinfo">office@tricell.com</td>
+		 </tr>
+		 <tr>
+		  <td class="contacticon"><img src="images/contact_web.gif" alt="Web" border="0" /></td>
+		  <td class="contactinfo">www.tricell.com</td>
+		 </tr>
+		</table>
+		<!-- Kontaktuppgifter slut -->
+	</div>
+	<!-- Headerright slut -->
+
+</div>
+<div style="height :0px;clear: both;"></div>
+
+<!------------------------- Header slut ------------------------------>
+
+<!------------------------- Meny start ------------------------------>
+
+<!-- Meny-box start -->
+<div id="menucontainer">
+
+	<!-- Menyn item start-->
+	<div class="menuitem">
+	<table>
+	 <tr>
+	  <td class="mainmenuicon"><img src="images/menu_company.png" border="0" /></td>
+	  <td class="mainmenutext"><a href="company_presentation.html">Company Presentation</a></td>
+	 </tr>
+	</table>
+	</div>
+	<!-- Menyn item slut -->
+
+	<!-- Menyn item start-->
+	<div class="menuitem">
+	<table>
+	 <tr>
+	  <td class="mainmenuicon"><img src="images/menu_history.png" border="0" /></td>
+	  <td class="mainmenutext"><a href="history.html">History</a></td>
+	 </tr>
+	</table>
+	</div>
+	<!-- Menyn item slut -->
+
+	<!-- Menyn item start-->
+	<div class="menuitem">
+	<table>
+	 <tr>
+	  <td class="mainmenuicon"><img src="images/menu_board.png" border="0" /></td>
+	  <td class="mainmenutext"><a href="board_of_directors.html">Board of Directors</a></td>
+	 </tr>
+	</table>
+	</div>
+	<!-- Menyn item slut -->
+
+	<!-- Menyn item start-->
+	<div class="menuitem">
+	<table>
+	 <tr>
+	  <td class="mainmenuicon"><img src="images/menu_personnel.png" border="0" /></td>
+	  <td class="mainmenutext"><a href="personnel_registry.html">Personnel Registry</a></td>
+	 </tr>
+	</table>
+	</div>
+	<!-- Menyn item slut -->
+
+</div>
+<div style="height :0px;clear: both;"></div>
+<!-- Meny-box slut -->
+
+<!------------------------- Meny slut ------------------------------>
+
+
+<!------------------------- Info start ------------------------------>
+
+<!-- Info-tabell start -->
+<div class="infodiv">
+
+<h1>Welcome to Tricell Laboratories Inc.</h1>
+
+<img src="images/tricell_welcome.png" width="300" style="float:right"/><br />&nbsp;<br />
+
+TRICELL Laboratories Inc. (Otherwise known simply as Tricell)
+is a multi-industrial conglomerate, prominent in the Federation of
+Pharmaceutical Companies. It was a conglomerate of three organizations
+descended from Travis Enterprises (founded in 1965 by Henry Travis).
+Its name was derived from the  triumvirate of "cells" that formed it.
+<br />&nbsp;<br />
+
+The company is one of the more prominent members of the Federation of
+Pharmaceutical Companies along with companies such as the Umbrella
+Corporation.
+<br />&nbsp;<br />
+
+<h2>Tricell - We care about Your future!</h2>
+
+</div>
+<!-- Info-tabell slut -->
+
+<!------------------------- Info slut ------------------------------>
+
+</body>
+
+</html>

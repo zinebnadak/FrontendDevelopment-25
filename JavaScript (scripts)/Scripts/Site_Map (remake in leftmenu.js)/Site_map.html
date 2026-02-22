@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+    <link rel="stylesheet" href="Site_map.css">
+</head>
+<body>
+    <!-- Menu Button -->
+    <div id="menubutton">
+        <button class="openmenubutton" onclick="toggleMenu()">Tricell Laboratories Inc.</button>
+    </div>
+
+    <!-- Site Map Container -->
+    <div id="siteMapContainer" class="hidden">
+        <a href="javascript:void(0)" class="closemenubutton" onclick="javascript:closeMenu()">×</a>
+        <h1>Tricell Laboratories Inc.</h1>
+        <nav>
+            <ul>
+                <li class="section-divider"><b><a href=".html">Company Presentation</a></b></li>
+                <li class="subheading"><a href=".html">1. Pharmaceutical Research</a></li>
+                <li class="subheading"><a href=".html">2. Natural Resources</a></li>
+                <li class="subheading"><a href=".html">3. Shipping</a></li>
+                <li class="section-divider"><p> <b><a href=".html">History</a></b> </p></li>
+                <li class="section-divider"><b><a href=".html">Headquarters</a></b></li>
+                <li class="subheading"><a href=".html">Board of Directors</a></li>
+                <li class="subheading"><a href=".html">International Suppliers</a></li>
+                <li class="subheading"><a href=".html">Kijuju Laboratory</a></li>
+                <li class="subheading"><a href=".html">Mariehamn Data Lab</a></li>
+                <li class="section-divider"><p> <b><a href=".html">Personnel Registry</a></b> </p></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const siteMapContainer = document.getElementById('siteMapContainer');
+            siteMapContainer.classList.toggle('hidden');
+        }
+
+        function closeMenu() {
+            const siteMapContainer = document.getElementById('siteMapContainer');
+            siteMapContainer.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

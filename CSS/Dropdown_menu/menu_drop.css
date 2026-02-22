@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #ffffff;
+}
+
+/* Green bar */
+#greenbar {
+  width: 760px;
+  height: 30px;
+  margin: 30px auto 0;
+  background: #274f26;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+/* Top-level menu row */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+
+.item {
+  float: left;
+  position: relative; /* anchors dropdown */
+}
+
+/* Top links */
+.toplink {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toplink:hover {
+  color: #aad037;
+  text-decoration: underline;
+}
+
+/* Dropdown hidden by default */
+.dropdown {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;   /* directly below the bar */
+  left: 0;
+  min-width: 220px;
+  border: 1px solid #000000;
+  z-index: 9999;
+}
+
+/* Show on hover */
+.item:hover .dropdown {
+  display: block;
+}
+
+/* Dropdown links */
+.dropdown a {
+  display: block;
+  padding: 8px 10px;
+  background: #aad037;
+  color: #000000;
+  text-decoration: none;
+  border-top: 1px solid #000000;
+}
+
+.dropdown li:first-child a {
+  border-top: 0;
+}
+
+.dropdown a:hover {
+  text-decoration: underline;
+}
+
+
+
+
