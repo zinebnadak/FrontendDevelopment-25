@@ -1,4 +1,4 @@
-# FRONTEND HANDS-ON PRACTICE PROJECT
+# FRONTEND HANDS-ON PRACTICE PROJECT (the frontend of an webapplication)
 ## HTML 
 ### IT25-22 Internal Website
 
